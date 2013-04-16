@@ -1,0 +1,686 @@
+TConference
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Info.plist Conference/Conference-Info.plist
+cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist build/Debug-iphoneos/Conference.app/ResourceRules.plist
+cProcessPCH /var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-exrhysxsymkvonekrgqjjuaoyiun/Conference-Prefix.pch.pth Conference/Conference-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH++ /var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-dvwlivmznfrrxwcftiklmgwuxyff/Conference-Prefix.pch.pth Conference/Conference-Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/ViewController.o /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/ViewController.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/main.o /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/AppDelegate.o /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Conference normal armv7
+cGenerateDSYMFile /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app.dSYM /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Conference
+cCopyPNGFile /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Default-568h@2x.png Conference/Default-568h@2x.png
+cCompileStoryboard /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/en.lproj/MainStoryboard_iPhone.storyboard
+cCopyPNGFile /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Default.png Conference/Default.png
+cCopyPNGFile /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Default@2x.png Conference/Default@2x.png
+cProcessProductPackaging "/Users/mattvv/Library/MobileDevice/Provisioning Profiles/8735B90C-B074-4695-A8C8-95AD17C18A93.mobileprovision" /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/embedded.mobileprovision
+cProcessProductPackaging "/Users/mattvv/Library/MobileDevice/Provisioning Profiles/8735B90C-B074-4695-A8C8-95AD17C18A93.mobileprovision" /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/embedded.mobileprovision
+cTouch /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app
+cProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference.xcent
+cCodeSign /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk
+c000000005102E2A90000000000000110
+t1359143593
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist
+c000000005108149D00000000000001A7
+t1359484061
+s423
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist
+c000000005108149D00000000000001E5
+t1359484061
+s485
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000005108149D000000000036CDF0
+t1359484061
+s3591664
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Accelerate.framework/Accelerate
+c000000005108149D00000000000064F0
+t1359484061
+s25840
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Accounts.framework/Accounts
+c000000005108149D0000000000049500
+t1359484061
+s300288
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AdSupport.framework/AdSupport
+c000000005108149D0000000000008BE0
+t1359484061
+s35808
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
+c000000005108149D000000000014A320
+t1359484061
+s1352480
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000005108149E00000000006B1F40
+t1359484062
+s7020352
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c000000005108149D00000000002C8530
+t1359484061
+s2917680
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000005108149D0000000000322700
+t1359484061
+s3286784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000005108149D0000000000114910
+t1359484061
+s1132816
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+c000000005108149E00000000001694D0
+t1359484062
+s1479888
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c000000005108149D0000000000041310
+t1359484061
+s267024
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000005108149E000000000062AD10
+t1359484062
+s6466832
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000005108149E00000000000015F7
+t1359484062
+s5623
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c000000005108149E000000000012C360
+t1359484062
+s1229664
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c000000005108149E0000000000024190
+t1359484062
+s147856
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000005108149E00000000003596B0
+t1359484062
+s3511984
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Security.framework/Security
+c000000005108149E00000000000A8A40
+t1359484062
+s690752
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Social.framework/Social
+c000000005108149E00000000001889F0
+t1359484062
+s1608176
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/StoreKit.framework/StoreKit
+c000000005108149E00000000000495D0
+t1359484062
+s300496
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c000000005108149E00000000000CAFB0
+t1359484062
+s831408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000005108149E0000000000000E8D
+t1359484062
+s3725
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000005108149F00000000011BCDF0
+t1359484063
+s18599408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/include/Availability.h
+c00000000510814A00000000000001B73
+t1359484064
+s7027
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/lib/libresolv.dylib
+c00000000510814A1000000000003D5D0
+t1359484065
+s251344
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/lib/libsqlite3.dylib
+c00000000510814A10000000000121470
+t1359484065
+s1184880
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/lib/libz.1.1.3.dylib
+c00000000510814A10000000000022520
+t1359484065
+s140576
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/AppDelegate.h
+c00000000511042C90000000000000119
+t1360020169
+s281
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/AppDelegate.m
+c0000000050E60F3300000000000007DB
+t1357254451
+s2011
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/Conference-Prefix.pch
+c0000000050E60F33000000000000013F
+t1357254451
+s319
+i<Availability.h>
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/Default-568h@2x.png
+c0000000050E60F3300000000000048A2
+t1357254451
+s18594
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/Default.png
+c0000000050E60F33000000000000198C
+t1357254451
+s6540
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/Default@2x.png
+c0000000050E60F330000000000003EEB
+t1357254451
+s16107
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/ViewController.h
+c0000000050E60F3300000000000002BA
+t1357254451
+s698
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/ViewController.mm
+c000000005110436F000000000000116C
+t1360020335
+s4460
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/en.lproj/MainStoryboard_iPhone.storyboard
+c0000000050E60F330000000000002770
+t1357254451
+s10096
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/main.m
+c0000000050E60F330000000000000154
+t1357254451
+s340
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/ShowKit.framework/Headers/Constants.h
+c00000000510FFB0F0000000000001DA9
+t1360001807
+s7593
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/ShowKit.framework/Headers/SHKGLESSession.h
+c00000000510FFB0F0000000000000462
+t1360001807
+s1122
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/ShowKit.framework/Headers/SHKGestures.h
+c00000000510FFB0F0000000000000311
+t1360001807
+s785
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/ShowKit.framework/Headers/SHKNotification.h
+c00000000510FFB0F00000000000002BD
+t1360001807
+s701
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/ShowKit.framework/Headers/SHKParseUser.h
+c00000000510FFB0F000000000000075A
+t1360001807
+s1882
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/ShowKit.framework/Headers/ShowKit.h
+c00000000510FFB0F0000000000001921
+t1360001807
+s6433
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/ShowKit.framework/ShowKit
+c00000000510FFB0F000000000192AB90
+t1360001807
+s26389392
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference.xcent
+t1360021083
+s428
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/AppDelegate-5B949337A3849EA8.o
+t2
+s0
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/AppDelegate-5FBA4AF1817F1869.o
+t2
+s0
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/AppDelegate.o
+t1360021082
+s85856
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/Conference.LinkFileList
+c000000005110463900000000000001B2
+t1360021049
+s434
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/ViewController-BC21372C14632167.o
+t2
+s0
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/ViewController-DCF3BD691B949FA8.o
+t2
+s0
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/ViewController.o
+t1360021082
+s98032
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/main-798F168EDDA45EA4.o
+t2
+s0
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/main-7B9756A868F06B84.o
+t2
+s0
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/main.o
+t1360021082
+s3440
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app
+t1360021083
+s408
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app.dSYM
+t1360021082
+s102
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Conference
+t1360021083
+s3156384
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Default-568h@2x.png
+t1360021082
+s7014
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Default.png
+t1360021082
+s3688
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Default@2x.png
+t1360021082
+s6316
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Info.plist
+t1360021082
+s1251
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/PkgInfo
+t1360021082
+s8
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/ResourceRules.plist
+t1360021049
+s485
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/embedded.mobileprovision
+t1360021083
+s24820
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/en.lproj/MainStoryboard_iPhone.storyboardc
+t1360021082
+s170
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/iShowYou/AppDelegate.m
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/iShowYou/Conference-Prefix.pch
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/iShowYou/Default-568h@2x.png
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/iShowYou/Default.png
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/iShowYou/Default@2x.png
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/iShowYou/ViewController.mm
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/iShowYou/en.lproj/InfoPlist.strings
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/iShowYou/en.lproj/MainStoryboard_iPhone.storyboard
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/mattvv/Documents/curiousminds/showkit_video_demo/iShowYou/main.m
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/mattvv/Library/MobileDevice/Provisioning Profiles/8735B90C-B074-4695-A8C8-95AD17C18A93.mobileprovision
+c00000000510C58D400000000000060F4
+t1359763668
+s24820
+
+N/var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-cgkghmsxvxmnmvgujlnrbujjgswu/Conference-Prefix.pch.pth
+t2
+s0
+
+N/var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-dvwlivmznfrrxwcftiklmgwuxyff/Conference-Prefix.pch.pth
+t1360021082
+s5405544
+
+N/var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-ekiitancnsvxdbbpwatwhuvnuaah/Conference-Prefix.pch.pth
+t2
+s0
+
+N/var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-exrhysxsymkvonekrgqjjuaoyiun/Conference-Prefix.pch.pth
+t1360021082
+s4606920
+
+NConference/Conference-Info.plist
+c000000005110451400000000000005DD
+t1360020756
+s1501
+
+NiShowYou/Conference-Info.plist
+c00000000000000000000000000000000
+t2
+s0
+
+CBuild AST from /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/AppDelegate.m
+r0
+
+CBuild AST from /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/ViewController.mm
+r0
+
+CBuild AST from /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/main.m
+r0
+
+CBuild AST from /Users/mattvv/Documents/curiousminds/showkit_video_demo/iShowYou/AppDelegate.m
+r0
+
+CBuild AST from /Users/mattvv/Documents/curiousminds/showkit_video_demo/iShowYou/ViewController.mm
+r0
+
+CBuild AST from /Users/mattvv/Documents/curiousminds/showkit_video_demo/iShowYou/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies52ed13ed7dc0b641^5ef237ed7dc0b641^---0#1#0#--18"Check dependencies36"9D061E9D-44EF-4F9B-99EA-95E10C5440DF-
+
+CCodeSign /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app
+s381713901.384850
+e381713901.564098
+r1
+xCodeSign
+x/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app
+o/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app: replacing existing signature
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"CodeSign build/Debug-iphoneos/Conference.app7f6a64ed7dc0b641^836ad3ed7dc0b641^-121"/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app: replacing existing signature-0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/0000000000000000^874"CodeSign build/Debug-iphoneos/Conference.app    cd /Users/mattvv/Documents/curiousminds/showkit_video_demo    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign 0a125a7678dd15aff62a3b14b873eeab9c18980a --resource-rules=/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/ResourceRules.plist --entitlements /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference.xcent /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app36"5B23AAED-6CCD-40E9-B2C9-6E3012C8870A-
+
+CCompileC build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/AppDelegate-5B949337A3849EA8.o /Users/mattvv/Documents/curiousminds/showkit_video_demo/iShowYou/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/AppDelegate-5FBA4AF1817F1869.o /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/AppDelegate.o /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s381713882.460580
+e381713882.525648
+r1
+xCompileC
+xbuild/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/AppDelegate.o
+x/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/AppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/AppDelegate.m983476da7dc0b641^2e9286da7dc0b641^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/AppDelegate.m0000000000000000^3632"CompileC build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/AppDelegate.o Conference/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mattvv/Documents/curiousminds/showkit_video_demo    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference-generated-files.hmap -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference-own-target-headers.hmap -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference-all-target-headers.hmap -iquote /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference-project-headers.hmap -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/DerivedSources/armv7 -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/DerivedSources -F/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos -F/Users/mattvv/Documents/curiousminds/showkit_video_demo -include /var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-exrhysxsymkvonekrgqjjuaoyiun/Conference-Prefix.pch -MMD -MT dependencies -MF /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/AppDelegate.d --serialize-diagnostics /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/AppDelegate.dia -c /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/AppDelegate.m -o /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/AppDelegate.o36"9744DA69-1FAE-42EF-9151-49AE907C72C4-
+
+CCompileC build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/ViewController-BC21372C14632167.o /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/ViewController.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/ViewController-DCF3BD691B949FA8.o /Users/mattvv/Documents/curiousminds/showkit_video_demo/iShowYou/ViewController.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/ViewController.o /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/ViewController.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s381713882.507266
+e381713882.594315
+r1
+xCompileC
+xbuild/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/ViewController.o
+x/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/ViewController.mm
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/ViewController.mm5de082da7dc0b641^5f2498da7dc0b641^---0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/ViewController.mm0000000000000000^3800"CompileC build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/ViewController.o Conference/ViewController.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mattvv/Documents/curiousminds/showkit_video_demo    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -std=gnu++11 -stdlib=libc++ -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference-generated-files.hmap -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference-own-target-headers.hmap -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference-all-target-headers.hmap -iquote /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference-project-headers.hmap -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/DerivedSources/armv7 -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/DerivedSources -F/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos -F/Users/mattvv/Documents/curiousminds/showkit_video_demo -include /var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-dvwlivmznfrrxwcftiklmgwuxyff/Conference-Prefix.pch -MMD -MT dependencies -MF /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/ViewController.d --serialize-diagnostics /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/ViewController.dia -c /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/ViewController.mm -o /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/ViewController.o36"836787D7-8CDA-4FBE-8820-03F9D2D1E1B4-
+
+CCompileC build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/ViewController.o /Users/mattvv/Documents/curiousminds/showkit_video_demo/iShowYou/ViewController.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/main-798F168EDDA45EA4.o /Users/mattvv/Documents/curiousminds/showkit_video_demo/iShowYou/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/main-7B9756A868F06B84.o /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/main.o /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s381713882.460402
+e381713882.491463
+r1
+xCompileC
+xbuild/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/main.o
+x/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compile /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/main.m983476da7dc0b641^96d07dda7dc0b641^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/main.m0000000000000000^3590"CompileC build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/main.o Conference/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mattvv/Documents/curiousminds/showkit_video_demo    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference-generated-files.hmap -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference-own-target-headers.hmap -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference-all-target-headers.hmap -iquote /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference-project-headers.hmap -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/DerivedSources/armv7 -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/DerivedSources -F/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos -F/Users/mattvv/Documents/curiousminds/showkit_video_demo -include /var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-exrhysxsymkvonekrgqjjuaoyiun/Conference-Prefix.pch -MMD -MT dependencies -MF /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/main.d --serialize-diagnostics /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/main.dia -c /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/main.m -o /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/main.o36"9075CFC6-FA81-4ADB-A57F-C188152B3740-
+
+CCompileC build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/main.o /Users/mattvv/Documents/curiousminds/showkit_video_demo/iShowYou/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileStoryboard /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/en.lproj/MainStoryboard_iPhone.storyboard
+s381713882.835594
+e381713882.969395
+r1
+xCompileStoryboard
+x/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/en.lproj/MainStoryboard_iPhone.storyboard
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"CompileStoryboard Conference/en.lproj/MainStoryboard_iPhone.storyboardb9fed5da7dc0b641^cc2af8da7dc0b641^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/en.lproj/MainStoryboard_iPhone.storyboard0000000000000000^952"CompileStoryboard Conference/en.lproj/MainStoryboard_iPhone.storyboard    cd /Users/mattvv/Documents/curiousminds/showkit_video_demo    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/en.lproj/MainStoryboard_iPhone.storyboardc /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/en.lproj/MainStoryboard_iPhone.storyboard --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk36"C68CB07B-8E5D-436F-85E0-F3B802298A9B-
+
+CCompileStoryboard /Users/mattvv/Documents/curiousminds/showkit_video_demo/iShowYou/en.lproj/MainStoryboard_iPhone.storyboard
+r0
+
+CCopyPNGFile /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Default-568h@2x.png Conference/Default-568h@2x.png
+s381713882.835598
+e381713882.956958
+r1
+xCopyPNGFile
+x/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Default-568h@2x.png
+xConference/Default-568h@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"CopyPNGFile build/Debug-iphoneos/Conference.app/Default-568h@2x.png Conference/Default-568h@2x.pngb9fed5da7dc0b641^2bf9f4da7dc0b641^---0#0#0#-19%DVTDocumentLocation2@102"file://localhost/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/Default-568h@2x.png0000000000000000^671"CopyPNGFile "build/Debug-iphoneos/Conference.app/Default-568h@2x.png" "Conference/Default-568h@2x.png"    cd /Users/mattvv/Documents/curiousminds/showkit_video_demo    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/Default-568h@2x.png" "/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Default-568h@2x.png"36"913BE501-5EA8-40AC-966C-98D762C9C406-
+
+CCopyPNGFile /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Default-568h@2x.png iShowYou/Default-568h@2x.png
+r0
+
+CCopyPNGFile /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Default.png Conference/Default.png
+s381713882.835603
+e381713882.894722
+r1
+xCopyPNGFile
+x/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Default.png
+xConference/Default.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"CopyPNGFile build/Debug-iphoneos/Conference.app/Default.png Conference/Default.pngcff9d5da7dc0b641^6825e5da7dc0b641^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/Default.png0000000000000000^631"CopyPNGFile build/Debug-iphoneos/Conference.app/Default.png Conference/Default.png    cd /Users/mattvv/Documents/curiousminds/showkit_video_demo    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/Default.png /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Default.png36"DEDF73FD-2FC9-4C2B-BFE0-DB8CCDA68ED5-
+
+CCopyPNGFile /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Default.png iShowYou/Default.png
+r0
+
+CCopyPNGFile /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Default@2x.png Conference/Default@2x.png
+s381713882.835615
+e381713882.931117
+r1
+xCopyPNGFile
+x/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Default@2x.png
+xConference/Default@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"CopyPNGFile build/Debug-iphoneos/Conference.app/Default@2x.png Conference/Default@2x.png01fad5da7dc0b641^d658eeda7dc0b641^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/Default@2x.png0000000000000000^651"CopyPNGFile "build/Debug-iphoneos/Conference.app/Default@2x.png" "Conference/Default@2x.png"    cd /Users/mattvv/Documents/curiousminds/showkit_video_demo    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/Default@2x.png" "/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Default@2x.png"36"73807654-1CB1-454A-9D9A-5E904D124BD5-
+
+CCopyPNGFile /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Default@2x.png iShowYou/Default@2x.png
+r0
+
+CCopyStringsFile /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/en.lproj/InfoPlist.strings iShowYou/en.lproj/InfoPlist.strings
+r0
+
+CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist build/Debug-iphoneos/Conference.app/ResourceRules.plist
+s381713849.610980
+e381713849.624298
+r1
+xCpResource
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist
+xbuild/Debug-iphoneos/Conference.app/ResourceRules.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy build/Debug-iphoneos/Conference.app/ResourceRules.plist49869cb97dc0b641^f016a0b97dc0b641^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/ResourceRules.plist000000000080d041^766"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist build/Debug-iphoneos/Conference.app/ResourceRules.plist    cd /Users/mattvv/Documents/curiousminds/showkit_video_demo    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app36"863FB28F-528B-4CFA-A0A8-7F07AAEB78E4-
+
+CGenerateDSYMFile /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app.dSYM /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Conference
+s381713901.275093
+e381713901.311012
+r1
+xGenerateDSYMFile
+x/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app.dSYM
+x/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Conference
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Generate /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app.dSYM98c346ed7dc0b641^f59e6eed7dc0b641^---0#0#0#-19%DVTDocumentLocation2@113"file://localhost/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app.dSYM/0000000000000000^659"GenerateDSYMFile build/Debug-iphoneos/Conference.app.dSYM build/Debug-iphoneos/Conference.app/Conference    cd /Users/mattvv/Documents/curiousminds/showkit_video_demo    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Conference -o /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app.dSYM36"E22AF3E5-A712-492A-A488-59E7DB7297C0-
+
+CLd /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Conference normal armv7
+s381713882.600601
+e381713882.772864
+r1
+xLd
+x/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Conference
+xnormal
+xarmv7
+old: warning: PIE disabled. Absolute addressing (perhaps -mdynamic-no-pic) not allowed in code signed PIE, but used in _aac_adtstoasc_filter from /Users/mattvv/Documents/curiousminds/showkit_video_demo/ShowKit.framework/ShowKit(aac_adtstoasc_bsf.o). To fix this warning, don't compile with -mdynamic-no-pic or link with -Wl,-no_pie
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Link /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Conference39d699da7dc0b641^f0dac5da7dc0b641^-331"ld: warning: PIE disabled. Absolute addressing (perhaps -mdynamic-no-pic) not allowed in code signed PIE, but used in _aac_adtstoasc_filter from /Users/mattvv/Documents/curiousminds/showkit_video_demo/ShowKit.framework/ShowKit(aac_adtstoasc_bsf.o). To fix this warning, don't compile with -mdynamic-no-pic or link with -Wl,-no_pie1(21%IDEActivityLogMessage2@317"PIE disabled. Absolute addressing (perhaps -mdynamic-no-pic) not allowed in code signed PIE, but used in _aac_adtstoasc_filter from /Users/mattvv/Documents/curiousminds/showkit_video_demo/ShowKit.framework/ShowKit(aac_adtstoasc_bsf.o). To fix this warning, don't compile with -mdynamic-no-pic or link with -Wl,-no_pie-381713882#0#331#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--0#0#0#--1645"Ld build/Debug-iphoneos/Conference.app/Conference normal armv7    cd /Users/mattvv/Documents/curiousminds/showkit_video_demo    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -L/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos -F/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos -F/Users/mattvv/Documents/curiousminds/showkit_video_demo -filelist /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Objects-normal/armv7/Conference.LinkFileList -dead_strip -fobjc-arc -fobjc-link-runtime -stdlib=libc++ -miphoneos-version-min=6.0 -framework SystemConfiguration -framework StoreKit -framework Social -framework Security -framework QuartzCore -framework MobileCoreServices -lz.1.1.3 -framework CoreLocation -framework CoreGraphics -framework CFNetwork -framework AdSupport -framework Accounts -framework AudioToolbox -framework CoreMedia -framework AddressBook -lresolv -lsqlite3 -framework Accelerate -framework CoreVideo -framework AVFoundation -framework OpenGLES -framework UIKit -framework Foundation -framework ShowKit -o /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Conference36"B89FEFEC-14A1-4B82-B0DC-B2D86610B11C-
+
+CProcessInfoPlistFile /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Info.plist Conference/Conference-Info.plist
+s381713882.155562
+e381713882.159529
+r1
+xProcessInfoPlistFile
+x/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Info.plist
+xConference/Conference-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Process Conference/Conference-Info.plist593128da7dc0b641^c4e928da7dc0b641^---0#0#0#-19%DVTDocumentLocation2@104"file://localhost/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/Conference-Info.plist0000000000000000^818"ProcessInfoPlistFile build/Debug-iphoneos/Conference.app/Info.plist Conference/Conference-Info.plist    cd /Users/mattvv/Documents/curiousminds/showkit_video_demo    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Conference/Conference-Info.plist -genpkginfo /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/ResourceRules.plist -o /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Info.plist36"D0447E46-B8D1-4A6C-82EC-8BC6F69D79DE-
+
+CProcessInfoPlistFile /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Info.plist iShowYou/Conference-Info.plist
+s381713849.610969
+e381713849.639848
+r0
+xProcessInfoPlistFile
+x/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Info.plist
+xiShowYou/Conference-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection38"Process iShowYou/Conference-Info.plist05869cb97dc0b641^abcda3b97dc0b641^-210"error: could not read data from '/Users/mattvv/Documents/curiousminds/showkit_video_demo/iShowYou/Conference-Info.plist': The file “Conference-Info.plist” couldn’t be opened because there is no such file.1(21%IDEActivityLogMessage2@203"could not read data from '/Users/mattvv/Documents/curiousminds/showkit_video_demo/iShowYou/Conference-Info.plist': The file “Conference-Info.plist” couldn’t be opened because there is no such file.-381713849#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#24"Info.plist Utility Error--0#0#0#-19%DVTDocumentLocation4@102"file://localhost/Users/mattvv/Documents/curiousminds/showkit_video_demo/iShowYou/Conference-Info.plist000000000080d041^814"ProcessInfoPlistFile build/Debug-iphoneos/Conference.app/Info.plist iShowYou/Conference-Info.plist    cd /Users/mattvv/Documents/curiousminds/showkit_video_demo    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility iShowYou/Conference-Info.plist -genpkginfo /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/ResourceRules.plist -o /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/Info.plist36"76098BDA-04A3-46D6-A6C8-F237A6A80D0C-
+
+CProcessPCH /Users/mattvv/Library/Developer/Xcode/DerivedData/Conference-fmmlawpmbmrlyedqruvqcixcbrmm/Index/PrecompiledHeaders/Conference-Prefix-bmiabbenmscabecmifbnjrvarwzj_ast/Conference-Prefix.pch.pth Conference/Conference-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/mattvv/Library/Developer/Xcode/DerivedData/Conference-fmmlawpmbmrlyedqruvqcixcbrmm/Index/PrecompiledHeaders/Conference-Prefix-dtqkapmuqfclgxgglhtgelfoxeoq_ast/Conference-Prefix.pch.pth iShowYou/Conference-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-ekiitancnsvxdbbpwatwhuvnuaah/Conference-Prefix.pch.pth iShowYou/Conference-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessPCH /var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-exrhysxsymkvonekrgqjjuaoyiun/Conference-Prefix.pch.pth Conference/Conference-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s381713882.167030
+e381713882.438766
+r1
+xProcessPCH
+x/var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-exrhysxsymkvonekrgqjjuaoyiun/Conference-Prefix.pch.pth
+xConference/Conference-Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Precompile Conference/Conference-Prefix.pchc6db2ada7dc0b641^fc5170da7dc0b641^---0#0#0#-19%DVTDocumentLocation2@104"file://localhost/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/Conference-Prefix.pch0000000000000000^3621"ProcessPCH /var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-exrhysxsymkvonekrgqjjuaoyiun/Conference-Prefix.pch.pth Conference/Conference-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mattvv/Documents/curiousminds/showkit_video_demo    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference-generated-files.hmap -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference-own-target-headers.hmap -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference-all-target-headers.hmap -iquote /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference-project-headers.hmap -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/DerivedSources/armv7 -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/DerivedSources -F/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos -F/Users/mattvv/Documents/curiousminds/showkit_video_demo --serialize-diagnostics /var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-exrhysxsymkvonekrgqjjuaoyiun/Conference-Prefix.pch.dia -c /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/Conference-Prefix.pch -o /var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-exrhysxsymkvonekrgqjjuaoyiun/Conference-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-exrhysxsymkvonekrgqjjuaoyiun/Conference-Prefix.pch.d36"26DCBF00-CF95-4B32-BA99-A64A91460390-
+
+CProcessPCH++ /Users/mattvv/Library/Developer/Xcode/DerivedData/Conference-fmmlawpmbmrlyedqruvqcixcbrmm/Index/PrecompiledHeaders/Conference-Prefix-dfkxpxlazbuhdbdofprmtapscqnc_ast/Conference-Prefix.pch.pth iShowYou/Conference-Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /Users/mattvv/Library/Developer/Xcode/DerivedData/Conference-fmmlawpmbmrlyedqruvqcixcbrmm/Index/PrecompiledHeaders/Conference-Prefix-dwkzkxdxmkidvmckxzlqbngfsicw_ast/Conference-Prefix.pch.pth Conference/Conference-Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-cgkghmsxvxmnmvgujlnrbujjgswu/Conference-Prefix.pch.pth iShowYou/Conference-Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessPCH++ /var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-dvwlivmznfrrxwcftiklmgwuxyff/Conference-Prefix.pch.pth Conference/Conference-Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s381713882.167039
+e381713882.499814
+r1
+xProcessPCH++
+x/var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-dvwlivmznfrrxwcftiklmgwuxyff/Conference-Prefix.pch.pth
+xConference/Conference-Prefix.pch
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Precompile Conference/Conference-Prefix.pchf4dc2ada7dc0b641^9df37fda7dc0b641^---0#0#0#-19%DVTDocumentLocation2@104"file://localhost/Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/Conference-Prefix.pch0000000000000000^3771"ProcessPCH++ /var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-dvwlivmznfrrxwcftiklmgwuxyff/Conference-Prefix.pch.pth Conference/Conference-Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mattvv/Documents/curiousminds/showkit_video_demo    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++-header -arch armv7 -fmessage-length=0 -std=gnu++11 -stdlib=libc++ -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference-generated-files.hmap -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference-own-target-headers.hmap -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference-all-target-headers.hmap -iquote /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference-project-headers.hmap -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/DerivedSources/armv7 -I/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/DerivedSources -F/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos -F/Users/mattvv/Documents/curiousminds/showkit_video_demo --serialize-diagnostics /var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-dvwlivmznfrrxwcftiklmgwuxyff/Conference-Prefix.pch.dia -c /Users/mattvv/Documents/curiousminds/showkit_video_demo/Conference/Conference-Prefix.pch -o /var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-dvwlivmznfrrxwcftiklmgwuxyff/Conference-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/s_/5scyb09j19s4c4mszd06b3ph0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Conference-Prefix-dvwlivmznfrrxwcftiklmgwuxyff/Conference-Prefix.pch.d36"73DCC132-DAE6-4B5E-BCE1-4EA2AA0761C3-
+
+CProcessProductPackaging "/Users/mattvv/Library/MobileDevice/Provisioning Profiles/8735B90C-B074-4695-A8C8-95AD17C18A93.mobileprovision" /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/embedded.mobileprovision
+s381713883.005684
+e381713883.024924
+r1
+xProcessProductPackaging
+x/Users/mattvv/Library/MobileDevice/Provisioning Profiles/8735B90C-B074-4695-A8C8-95AD17C18A93.mobileprovision
+x/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/embedded.mobileprovision
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection196"ProcessProductPackaging "/Users/mattvv/Library/MobileDevice/Provisioning Profiles/8735B90C-B074-4695-A8C8-95AD17C18A93.mobileprovision" build/Debug-iphoneos/Conference.app/embedded.mobileprovision800e03db7dc0b641^bb5e06db7dc0b641^---0#0#0#-19%DVTDocumentLocation2@132"file://localhost/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/embedded.mobileprovision0000000000000000^716"ProcessProductPackaging "/Users/mattvv/Library/MobileDevice/Provisioning Profiles/8735B90C-B074-4695-A8C8-95AD17C18A93.mobileprovision" build/Debug-iphoneos/Conference.app/embedded.mobileprovision    cd /Users/mattvv/Documents/curiousminds/showkit_video_demo    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility "/Users/mattvv/Library/MobileDevice/Provisioning Profiles/8735B90C-B074-4695-A8C8-95AD17C18A93.mobileprovision" -o /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app/embedded.mobileprovision36"4819AE2E-65F9-4A36-B1A5-006FA08C34F0-
+
+CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference.xcent
+s381713883.058030
+e381713883.060398
+r1
+xProcessProductPackaging
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist
+x/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference.xcent
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection216"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist build/Conference.build/Debug-iphoneos/Conference.build/Conference.xcent3def0edb7dc0b641^d5760fdb7dc0b641^---0#0#0#-19%DVTDocumentLocation2@143"file://localhost/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference.xcent000000000080d041^782"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist build/Conference.build/Debug-iphoneos/Conference.build/Conference.xcent    cd /Users/mattvv/Documents/curiousminds/showkit_video_demo    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist -entitlements -format xml -o /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Conference.build/Debug-iphoneos/Conference.build/Conference.xcent36"EB4F542E-41E1-4C51-9E88-D879FFAA46B8-
+
+CTouch /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app
+s381713883.032678
+e381713883.038901
+r1
+xTouch
+x/Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Touch /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.appe76d08db7dc0b641^6af509db7dc0b641^---0#0#0#--407"Touch build/Debug-iphoneos/Conference.app    cd /Users/mattvv/Documents/curiousminds/showkit_video_demo    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/mattvv/Documents/curiousminds/showkit_video_demo/build/Debug-iphoneos/Conference.app36"70D7A574-E9A1-4FBF-A8EE-D206CA3AA26D-
+

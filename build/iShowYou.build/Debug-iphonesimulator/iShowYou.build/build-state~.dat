@@ -1,0 +1,393 @@
+TiShowYou
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/Info.plist iShowYou/iShowYou-Info.plist
+cProcessPCH /var/folders/gq/4jy5bpmd1fb6c5qnsz83qlg80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iShowYou-Prefix-bxexiwzczivpktezxoblvkajdatq/iShowYou-Prefix.pch.pth iShowYou/iShowYou-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/AppDelegate.o /Users/xiaowoo/projects/iShowYou/iShowYou/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/ViewController.o /Users/xiaowoo/projects/iShowYou/iShowYou/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/main.o /Users/xiaowoo/projects/iShowYou/iShowYou/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/iShowYou normal i386
+cGenerateDSYMFile /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app.dSYM /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/iShowYou
+cCpResource iShowYou/Default.png build/Debug-iphonesimulator/iShowYou.app/Default.png
+cCopyStringsFile /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/en.lproj/InfoPlist.strings iShowYou/en.lproj/InfoPlist.strings
+cCpResource iShowYou/Default-568h@2x.png build/Debug-iphonesimulator/iShowYou.app/Default-568h@2x.png
+cCpResource iShowYou/Default@2x.png build/Debug-iphonesimulator/iShowYou.app/Default@2x.png
+cCompileStoryboard /Users/xiaowoo/projects/iShowYou/iShowYou/en.lproj/MainStoryboard_iPad.storyboard
+cCompileStoryboard /Users/xiaowoo/projects/iShowYou/iShowYou/en.lproj/MainStoryboard_iPhone.storyboard
+cTouch /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk
+c00000000504916AD0000000000000110
+t1346967213
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c00000000506DEBB700000000001EAFC0
+t1349381047
+s2011072
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Accelerate.framework/Accelerate
+c00000000506DEBB70000000000003530
+t1349381047
+s13616
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c00000000506DEBB700000000003D2B80
+t1349381047
+s4008832
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c00000000506DEBB70000000000215D60
+t1349381047
+s2186592
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000506DEBB80000000000228FD0
+t1349381048
+s2265040
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c00000000506DEBB80000000000020F20
+t1349381048
+s134944
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000506DEBB800000000003DCEF0
+t1349381048
+s4050672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c00000000506DEBB800000000000015F7
+t1349381048
+s5623
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c00000000506DEBB90000000000015400
+t1349381049
+s87040
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c00000000506DEBB900000000001D57A0
+t1349381049
+s1922976
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Security.framework/Security
+c00000000506DEBB9000000000006E370
+t1349381049
+s451440
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c00000000506DEBB9000000000006CC50
+t1349381049
+s445520
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c00000000506DEBBA0000000000000E8D
+t1349381050
+s3725
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000506DEBBB0000000000AB3D60
+t1349381051
+s11222368
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/usr/include/Availability.h
+c00000000506DEBC00000000000001B54
+t1349381056
+s6996
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/usr/lib/libresolv.dylib
+c00000000506DEBC00000000000003840
+t1349381056
+s14400
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/usr/lib/libsqlite3.dylib
+c00000000506DEBC000000000000D1F20
+t1349381056
+s859936
+
+N/Users/xiaowoo/projects/iShowYou/ShowKit.framework/ShowKit
+c0000000050CB7A34000000000276C738
+t1355512372
+s41338680
+
+N/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app
+t2
+s0
+
+N/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app.dSYM
+t2
+s0
+
+N/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/Default-568h@2x.png
+t2
+s0
+
+N/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/Default.png
+t2
+s0
+
+N/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/Default@2x.png
+t2
+s0
+
+N/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/Info.plist
+t2
+s0
+
+N/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/PkgInfo
+t2
+s0
+
+N/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/en.lproj/MainStoryboard_iPad.storyboardc
+t2
+s0
+
+N/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/en.lproj/MainStoryboard_iPhone.storyboardc
+t2
+s0
+
+N/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/iShowYou
+t2
+s0
+
+N/Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/AppDelegate.o
+t2
+s0
+
+N/Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/ViewController.o
+t2
+s0
+
+N/Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/iShowYou.LinkFileList
+c0000000050CBA2190000000000000173
+t1355522585
+s371
+
+N/Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/xiaowoo/projects/iShowYou/iShowYou/AppDelegate.m
+c0000000050CB80AF00000000000007DB
+t1355514031
+s2011
+
+N/Users/xiaowoo/projects/iShowYou/iShowYou/Default-568h@2x.png
+c000000005062328600000000000048A2
+t1348612742
+s18594
+
+N/Users/xiaowoo/projects/iShowYou/iShowYou/Default.png
+c0000000050623286000000000000198C
+t1348612742
+s6540
+
+N/Users/xiaowoo/projects/iShowYou/iShowYou/Default@2x.png
+c00000000506232860000000000003EEB
+t1348612742
+s16107
+
+N/Users/xiaowoo/projects/iShowYou/iShowYou/ViewController.m
+c0000000050CB80AF00000000000001F1
+t1355514031
+s497
+
+N/Users/xiaowoo/projects/iShowYou/iShowYou/en.lproj/InfoPlist.strings
+c0000000050CB80AF000000000000002D
+t1355514031
+s45
+
+N/Users/xiaowoo/projects/iShowYou/iShowYou/en.lproj/MainStoryboard_iPad.storyboard
+c0000000050CB80AF000000000000061D
+t1355514031
+s1565
+
+N/Users/xiaowoo/projects/iShowYou/iShowYou/en.lproj/MainStoryboard_iPhone.storyboard
+c0000000050CB80AF0000000000000603
+t1355514031
+s1539
+
+N/Users/xiaowoo/projects/iShowYou/iShowYou/iShowYou-Prefix.pch
+c0000000050CB80AF000000000000013F
+t1355514031
+s319
+i<Availability.h>
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+
+N/Users/xiaowoo/projects/iShowYou/iShowYou/main.m
+c0000000050CB80AF0000000000000154
+t1355514031
+s340
+
+N/var/folders/gq/4jy5bpmd1fb6c5qnsz83qlg80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iShowYou-Prefix-bxexiwzczivpktezxoblvkajdatq/iShowYou-Prefix.pch.pth
+t2
+s0
+
+NiShowYou/iShowYou-Info.plist
+c0000000050CB80AF000000000000064C
+t1355514031
+s1612
+
+CBuild AST from /Users/xiaowoo/projects/iShowYou/iShowYou/AppDelegate.m
+r0
+
+CBuild AST from /Users/xiaowoo/projects/iShowYou/iShowYou/ViewController.m
+r0
+
+CBuild AST from /Users/xiaowoo/projects/iShowYou/iShowYou/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies07953899d97bb641^abe94699d97bb641^---0#1#0#--18"Check dependencies36"4A0622DC-971A-4470-B99C-EFE06AD67777-
+
+CCompileC build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/AppDelegate.o /Users/xiaowoo/projects/iShowYou/iShowYou/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s377215385.643511
+e377215385.714425
+r1
+xCompileC
+xbuild/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/AppDelegate.o
+x/Users/xiaowoo/projects/iShowYou/iShowYou/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/xiaowoo/projects/iShowYou/iShowYou/AppDelegate.mb2daa499d97bb641^5ce8b699d97bb641^---0#0#0#-19%DVTDocumentLocation2@71"file://localhost/Users/xiaowoo/projects/iShowYou/iShowYou/AppDelegate.m0000000000000000^3506"CompileC build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/AppDelegate.o iShowYou/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/xiaowoo/projects/iShowYou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/iShowYou-generated-files.hmap -I/Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/iShowYou-own-target-headers.hmap -I/Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/iShowYou-all-target-headers.hmap -iquote /Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/iShowYou-project-headers.hmap -I/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/DerivedSources/i386 -I/Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/DerivedSources -F/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator -F/Users/xiaowoo/projects/iShowYou -include /var/folders/gq/4jy5bpmd1fb6c5qnsz83qlg80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iShowYou-Prefix-bxexiwzczivpktezxoblvkajdatq/iShowYou-Prefix.pch -MMD -MT dependencies -MF /Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/AppDelegate.dia -c /Users/xiaowoo/projects/iShowYou/iShowYou/AppDelegate.m -o /Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/AppDelegate.o36"4831FA92-69E1-4CAA-9410-B40CB8AB24A0-
+
+CCompileC build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/ViewController.o /Users/xiaowoo/projects/iShowYou/iShowYou/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s377215385.643529
+e377215385.714395
+r1
+xCompileC
+xbuild/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/ViewController.o
+x/Users/xiaowoo/projects/iShowYou/iShowYou/ViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/xiaowoo/projects/iShowYou/iShowYou/ViewController.m6edaa499d97bb641^36e5b699d97bb641^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/xiaowoo/projects/iShowYou/iShowYou/ViewController.m0000000000000000^3524"CompileC build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/ViewController.o iShowYou/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/xiaowoo/projects/iShowYou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/iShowYou-generated-files.hmap -I/Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/iShowYou-own-target-headers.hmap -I/Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/iShowYou-all-target-headers.hmap -iquote /Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/iShowYou-project-headers.hmap -I/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/DerivedSources/i386 -I/Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/DerivedSources -F/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator -F/Users/xiaowoo/projects/iShowYou -include /var/folders/gq/4jy5bpmd1fb6c5qnsz83qlg80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iShowYou-Prefix-bxexiwzczivpktezxoblvkajdatq/iShowYou-Prefix.pch -MMD -MT dependencies -MF /Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/ViewController.d --serialize-diagnostics /Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/ViewController.dia -c /Users/xiaowoo/projects/iShowYou/iShowYou/ViewController.m -o /Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/ViewController.o36"69B8D6F2-02FB-4D68-AC77-56392CBE8FEE-
+
+CCompileC build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/main.o /Users/xiaowoo/projects/iShowYou/iShowYou/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s377215385.643534
+e377215385.707927
+r1
+xCompileC
+xbuild/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/main.o
+x/Users/xiaowoo/projects/iShowYou/iShowYou/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Compile /Users/xiaowoo/projects/iShowYou/iShowYou/main.md7d9a499d97bb641^193bb599d97bb641^---0#0#0#-19%DVTDocumentLocation2@64"file://localhost/Users/xiaowoo/projects/iShowYou/iShowYou/main.m0000000000000000^3464"CompileC build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/main.o iShowYou/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/xiaowoo/projects/iShowYou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/iShowYou-generated-files.hmap -I/Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/iShowYou-own-target-headers.hmap -I/Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/iShowYou-all-target-headers.hmap -iquote /Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/iShowYou-project-headers.hmap -I/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/DerivedSources/i386 -I/Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/DerivedSources -F/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator -F/Users/xiaowoo/projects/iShowYou -include /var/folders/gq/4jy5bpmd1fb6c5qnsz83qlg80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iShowYou-Prefix-bxexiwzczivpktezxoblvkajdatq/iShowYou-Prefix.pch -MMD -MT dependencies -MF /Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/main.dia -c /Users/xiaowoo/projects/iShowYou/iShowYou/main.m -o /Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/main.o36"54C24B13-673D-4335-BF1C-393CA596557F-
+
+CCompileStoryboard /Users/xiaowoo/projects/iShowYou/iShowYou/en.lproj/MainStoryboard_iPad.storyboard
+s377215385.935384
+e377215386.422896
+r1
+xCompileStoryboard
+x/Users/xiaowoo/projects/iShowYou/iShowYou/en.lproj/MainStoryboard_iPad.storyboard
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"CompileStoryboard iShowYou/en.lproj/MainStoryboard_iPad.storyboard878cef99d97bb641^ae486c9ad97bb641^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/xiaowoo/projects/iShowYou/iShowYou/en.lproj/MainStoryboard_iPad.storyboard0000000000000000^944"CompileStoryboard iShowYou/en.lproj/MainStoryboard_iPad.storyboard    cd /Users/xiaowoo/projects/iShowYou    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/en.lproj/MainStoryboard_iPad.storyboardc /Users/xiaowoo/projects/iShowYou/iShowYou/en.lproj/MainStoryboard_iPad.storyboard --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"8394FDDA-C7A0-4281-A5C9-7CADAD997F11-
+
+CCompileStoryboard /Users/xiaowoo/projects/iShowYou/iShowYou/en.lproj/MainStoryboard_iPhone.storyboard
+s377215385.935388
+e377215386.422868
+r1
+xCompileStoryboard
+x/Users/xiaowoo/projects/iShowYou/iShowYou/en.lproj/MainStoryboard_iPhone.storyboard
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"CompileStoryboard iShowYou/en.lproj/MainStoryboard_iPhone.storyboardb98cef99d97bb641^ea426c9ad97bb641^---0#0#0#-19%DVTDocumentLocation2@99"file://localhost/Users/xiaowoo/projects/iShowYou/iShowYou/en.lproj/MainStoryboard_iPhone.storyboard0000000000000000^950"CompileStoryboard iShowYou/en.lproj/MainStoryboard_iPhone.storyboard    cd /Users/xiaowoo/projects/iShowYou    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/en.lproj/MainStoryboard_iPhone.storyboardc /Users/xiaowoo/projects/iShowYou/iShowYou/en.lproj/MainStoryboard_iPhone.storyboard --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"9A9B539C-CA28-4C74-B5E0-082512D2CA82-
+
+CCopyStringsFile /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/en.lproj/InfoPlist.strings iShowYou/en.lproj/InfoPlist.strings
+s377215385.935342
+e377215385.940077
+r1
+xCopyStringsFile
+x/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/en.lproj/InfoPlist.strings
+xiShowYou/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Copy iShowYou/en.lproj/InfoPlist.stringsf48aef99d97bb641^48a9f099d97bb641^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/xiaowoo/projects/iShowYou/iShowYou/en.lproj/InfoPlist.strings0000000000000000^567"CopyStringsFile build/Debug-iphonesimulator/iShowYou.app/en.lproj/InfoPlist.strings iShowYou/en.lproj/InfoPlist.strings    cd /Users/xiaowoo/projects/iShowYou    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/en.lproj -- iShowYou/en.lproj/InfoPlist.strings36"3EBAA88E-0D84-41D1-A5A8-E0C8B17A107E-
+
+CCpResource iShowYou/Default-568h@2x.png build/Debug-iphonesimulator/iShowYou.app/Default-568h@2x.png
+s377215385.935357
+e377215385.939029
+r1
+xCpResource
+xiShowYou/Default-568h@2x.png
+xbuild/Debug-iphonesimulator/iShowYou.app/Default-568h@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy build/Debug-iphonesimulator/iShowYou.app/Default-568h@2x.pngbd8bef99d97bb641^dc64f099d97bb641^---0#0#0#-19%DVTDocumentLocation2@109"file://localhost/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/Default-568h@2x.png000000000080d041^590"CpResource "iShowYou/Default-568h@2x.png" "build/Debug-iphonesimulator/iShowYou.app/Default-568h@2x.png"    cd /Users/xiaowoo/projects/iShowYou    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/xiaowoo/projects/iShowYou/iShowYou/Default-568h@2x.png" /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app36"4EF76DB9-FC69-4BAA-BF98-B6BC4B8C8FF1-
+
+CCpResource iShowYou/Default.png build/Debug-iphonesimulator/iShowYou.app/Default.png
+s377215385.935335
+e377215385.938073
+r1
+xCpResource
+xiShowYou/Default.png
+xbuild/Debug-iphonesimulator/iShowYou.app/Default.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Copy build/Debug-iphonesimulator/iShowYou.app/Default.pnga988ef99d97bb641^8028f099d97bb641^---0#0#0#-19%DVTDocumentLocation2@101"file://localhost/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/Default.png000000000080d041^560"CpResource iShowYou/Default.png build/Debug-iphonesimulator/iShowYou.app/Default.png    cd /Users/xiaowoo/projects/iShowYou    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xiaowoo/projects/iShowYou/iShowYou/Default.png /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app36"8B6C5F0E-F092-46DA-83ED-83495E12A37F-
+
+CCpResource iShowYou/Default@2x.png build/Debug-iphonesimulator/iShowYou.app/Default@2x.png
+s377215385.935360
+e377215385.942293
+r1
+xCpResource
+xiShowYou/Default@2x.png
+xbuild/Debug-iphonesimulator/iShowYou.app/Default@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy build/Debug-iphonesimulator/iShowYou.app/Default@2x.png438cef99d97bb641^083bf199d97bb641^---0#0#0#-19%DVTDocumentLocation2@104"file://localhost/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/Default@2x.png000000000080d041^575"CpResource "iShowYou/Default@2x.png" "build/Debug-iphonesimulator/iShowYou.app/Default@2x.png"    cd /Users/xiaowoo/projects/iShowYou    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/xiaowoo/projects/iShowYou/iShowYou/Default@2x.png" /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app36"5BA2488C-3F73-47C7-9163-BE2DA0B1E0C4-
+
+CGenerateDSYMFile /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app.dSYM /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/iShowYou
+s377215385.899821
+e377215385.927021
+r1
+xGenerateDSYMFile
+x/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app.dSYM
+x/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/iShowYou
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Generating /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app.dSYM8f6ce699d97bb641^7251ed99d97bb641^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app.dSYM000000000080d041^613"GenerateDSYMFile build/Debug-iphonesimulator/iShowYou.app.dSYM build/Debug-iphonesimulator/iShowYou.app/iShowYou    cd /Users/xiaowoo/projects/iShowYou    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/iShowYou -o /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app.dSYM36"AE622941-AF32-4253-B5D1-F418B10D2BFB-
+
+CLd /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/iShowYou normal i386
+s377215385.720787
+e377215385.893251
+r1
+xLd
+x/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/iShowYou
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Link /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/iShowYou139ab899d97bb641^c1ace499d97bb641^---0#0#0#--1402"Ld build/Debug-iphonesimulator/iShowYou.app/iShowYou normal i386    cd /Users/xiaowoo/projects/iShowYou    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -L/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator -F/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator -F/Users/xiaowoo/projects/iShowYou -filelist /Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/Objects-normal/i386/iShowYou.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=6.0 -lresolv -lsqlite3 -framework Accelerate -framework Security -framework SystemConfiguration -framework AudioToolbox -framework CoreGraphics -framework CoreVideo -framework CFNetwork -framework QuartzCore -framework AVFoundation -framework OpenGLES -framework UIKit -framework Foundation -framework ShowKit -o /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/iShowYou36"D91470E2-BA97-42C8-83CC-74D34A96EF64-
+
+CProcessInfoPlistFile /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/Info.plist iShowYou/iShowYou-Info.plist
+s377215385.283908
+e377215385.286895
+r1
+xProcessInfoPlistFile
+x/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/Info.plist
+xiShowYou/iShowYou-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Process iShowYou/iShowYou-Info.plist1ec24899d97bb641^aa7e4999d97bb641^---0#0#0#-19%DVTDocumentLocation2@77"file://localhost/Users/xiaowoo/projects/iShowYou/iShowYou/iShowYou-Info.plist0000000000000000^639"ProcessInfoPlistFile build/Debug-iphonesimulator/iShowYou.app/Info.plist iShowYou/iShowYou-Info.plist    cd /Users/xiaowoo/projects/iShowYou    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility iShowYou/iShowYou-Info.plist -genpkginfo /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app/Info.plist36"921B26E7-E167-4818-95F8-2C3E6EA1F8A7-
+
+CProcessPCH /Users/xiaowoo/Library/Developer/Xcode/DerivedData/iShowYou-dutuwzgwijgquqfqxubjjbdzhzad/Index/PrecompiledHeaders/iShowYou-Prefix-dskgaypwsardhmdmzaqainstnydn_ast/iShowYou-Prefix.pch.pth iShowYou/iShowYou-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/gq/4jy5bpmd1fb6c5qnsz83qlg80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iShowYou-Prefix-bxexiwzczivpktezxoblvkajdatq/iShowYou-Prefix.pch.pth iShowYou/iShowYou-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s377215385.294996
+e377215385.636557
+r1
+xProcessPCH
+x/var/folders/gq/4jy5bpmd1fb6c5qnsz83qlg80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iShowYou-Prefix-bxexiwzczivpktezxoblvkajdatq/iShowYou-Prefix.pch.pth
+xiShowYou/iShowYou-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Precompile iShowYou/iShowYou-Prefix.pch72a84b99d97bb641^b6f6a299d97bb641^---0#0#0#-19%DVTDocumentLocation2@77"file://localhost/Users/xiaowoo/projects/iShowYou/iShowYou/iShowYou-Prefix.pch0000000000000000^3540"ProcessPCH /var/folders/gq/4jy5bpmd1fb6c5qnsz83qlg80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iShowYou-Prefix-bxexiwzczivpktezxoblvkajdatq/iShowYou-Prefix.pch.pth iShowYou/iShowYou-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/xiaowoo/projects/iShowYou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/iShowYou-generated-files.hmap -I/Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/iShowYou-own-target-headers.hmap -I/Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/iShowYou-all-target-headers.hmap -iquote /Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/iShowYou-project-headers.hmap -I/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/DerivedSources/i386 -I/Users/xiaowoo/projects/iShowYou/build/iShowYou.build/Debug-iphonesimulator/iShowYou.build/DerivedSources -F/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator -F/Users/xiaowoo/projects/iShowYou --serialize-diagnostics /var/folders/gq/4jy5bpmd1fb6c5qnsz83qlg80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iShowYou-Prefix-bxexiwzczivpktezxoblvkajdatq/iShowYou-Prefix.pch.dia -c /Users/xiaowoo/projects/iShowYou/iShowYou/iShowYou-Prefix.pch -o /var/folders/gq/4jy5bpmd1fb6c5qnsz83qlg80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iShowYou-Prefix-bxexiwzczivpktezxoblvkajdatq/iShowYou-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/gq/4jy5bpmd1fb6c5qnsz83qlg80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iShowYou-Prefix-bxexiwzczivpktezxoblvkajdatq/iShowYou-Prefix.pch.d36"505752F1-C7E4-4E00-93EB-7C1D1C08106B-
+
+CTouch /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app
+s377215386.430431
+e377215386.435103
+r1
+xTouch
+x/Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Touch /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app1d3d6e9ad97bb641^f5636f9ad97bb641^---0#0#0#--378"Touch build/Debug-iphonesimulator/iShowYou.app    cd /Users/xiaowoo/projects/iShowYou    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/xiaowoo/projects/iShowYou/build/Debug-iphonesimulator/iShowYou.app36"4981BD63-7E72-4CDF-AFB9-0DD0EBC705BD-
+
