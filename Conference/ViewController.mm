@@ -5,7 +5,7 @@
 //  Created by Yue Chang Hu on 12/14/12.
 //  Copyright (c) 2012 Curiousminds. All rights reserved.
 //
-
+#import "TargetConditionals.h"
 #import "ViewController.h"
 
 static NSString *kUser1login = @"ENTER_USER_HERE";
@@ -27,6 +27,16 @@ static NSString *kUser2password = @"ENTER_USER2_PASSWORD";
 - (void) viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    if (TARGET_IPHONE_SIMULATOR)
+    {
+    UIAlertView *simulatorAlert = [[UIAlertView alloc]initWithTitle:@"ShowKit Warning"
+                                                      message:@"ShowKit cannot make or receive calls when running on the simulator."
+                                                     delegate:self
+                                            cancelButtonTitle:@"Ok"
+                                            otherButtonTitles: nil];
+    
+    [simulatorAlert show];
+    }
     [ShowKit setState:self.mainVideoUIView forKey:SHKMainDisplayViewKey];
     [ShowKit setState:self.prevVideoUIView forKey:SHKPreviewDisplayViewKey];
     [ShowKit setState:SHKVideoLocalPreviewEnabled forKey:SHKVideoLocalPreviewModeKey];
