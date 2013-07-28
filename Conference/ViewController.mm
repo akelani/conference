@@ -120,6 +120,18 @@ static NSString *kUser2password = @"ENTER_USER2_PASSWORD";
         [callIncoming setTag:0];
         [callIncoming show];
     }
+    
+    else if ([v isEqualToString:SHKConnectionStatusInCall]) {
+        
+        NSLog(@"In Call");
+        
+        //set the main video view
+        [ShowKit setState:self.mainVideoUIView forKey:SHKMainDisplayViewKey];
+        
+        //set the main preview view
+        [ShowKit setState:self.prevVideoUIView forKey:SHKPreviewDisplayViewKey];
+        
+    }
 }
 
 - (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
