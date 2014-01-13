@@ -8,10 +8,12 @@
 #import "TargetConditionals.h"
 #import "ViewController.h"
 
-static NSString *kUser1login = @"ENTER_USER_HERE";
-static NSString *kUser2login = @"ENTER_USER2_HERE";
-static NSString *kUser1password = @"ENTER_USER1_PASSWORD";
-static NSString *kUser2password = @"ENTER_USER2_PASSWORD";
+//static NSString *kUser1login = @"521.tom";
+//static NSString *kUser2login = @"521.tharper";
+static NSString *kUser1login = @"422.tom";
+static NSString *kUser2login = @"422.tharper";
+static NSString *kUser1password = @"harper98";
+static NSString *kUser2password = @"harper98";
 
 @interface ViewController ()
 
@@ -46,17 +48,35 @@ static NSString *kUser2password = @"ENTER_USER2_PASSWORD";
                 selector:@selector(connectionStateChanged:)
                     name:SHKConnectionStatusChangedNotification
                   object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(gotUserNotification:)
+                                                 name:SHKUserMessageReceivedNotification
+                                               object:nil];
 }
 
 - (void) viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
+    
     [[NSNotificationCenter defaultCenter] removeObserver:self name:SHKConnectionStatusChangedNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:SHKUserMessageReceivedNotification object:nil];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)runTest:(id)sender {
+    
+    NSString* tempmsg = @"test sending a big message";
+    NSData *tempmsgD = [tempmsg dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:true];
+    [ShowKit sendMessage:tempmsgD];
+    
+
+    NSString* tempcmd = @"test sending a big cmd";
+    NSData *tempmsgC = [tempcmd dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:true];
+    [ShowKit sendCommand:tempmsgC];
 }
 
 - (IBAction)toggleUser:(id)sender {
@@ -81,19 +101,38 @@ static NSString *kUser2password = @"ENTER_USER2_PASSWORD";
 }
 
 - (IBAction)makeCall:(id)sender {
-    if ([[[self.makeCallOutlet titleLabel] text] isEqualToString:@"Make Call"]) {
+    if ([[[self.makeCallOutlet titleLabel] text] isEqualToString:@"Call"]) {
         
         if ([[[self.toggleUserOutlet titleLabel] text] isEqualToString:@"User 1"]) {
-            [ShowKit initiateCallWithUser:kUser2login];
+            [ShowKit initiateCallWithSubscriber:kUser2login];
         }else{
-            [ShowKit initiateCallWithUser:kUser1login];
+            [ShowKit initiateCallWithSubscriber:kUser1login];
         }
         [self.makeCallOutlet setTitle:@"End Call" forState:UIControlStateNormal];
     }else{
         [ShowKit hangupCall];
-        [self.makeCallOutlet setTitle:@"Make Call" forState:UIControlStateNormal];
+        [self.makeCallOutlet setTitle:@"Call" forState:UIControlStateNormal];
     }
 }
+//First, set up the handle the notification
+- (void) gotUserNotification: (NSNotification*) n
+{
+    SHKNotification* s ;
+    NSData* d;
+    NSString * v ;
+    s = (SHKNotification*) [n object];
+    d = (NSData*)s.Value;
+    v = (NSString*)[[NSString alloc] initWithData:d encoding:NSASCIIStringEncoding];
+    NSString* msg = [NSString stringWithFormat: @"msg receivd: \"%@\"?", v];
+    
+    //swizzle same alert twice, crash
+    //UIAlertView *showMessage = [[UIAlertView alloc] initWithTitle:@"Incoming Message"
+    //message:msg delegate:nil cancelButtonTitle:@"Close" otherButtonTitles:@"Close", nil];
+    //static int cntr =0;
+    //[showMessage setTag:cntr++];
+    //[showMessage show];
+}
+
 
 //First, set up the handle the notification
 - (void) connectionStateChanged: (NSNotification*) n
@@ -106,7 +145,7 @@ static NSString *kUser2password = @"ENTER_USER2_PASSWORD";
     
     
     if ([v isEqualToString:SHKConnectionStatusCallTerminated]){
-        [self.makeCallOutlet setTitle:@"Make Call" forState:UIControlStateNormal];
+        [self.makeCallOutlet setTitle:@"Call" forState:UIControlStateNormal];
     } else if ([v isEqualToString:SHKConnectionStatusLoggedIn]) {
         [self.loginOutlet setTitle:@"Logout" forState:UIControlStateNormal];
     } else if ([v isEqualToString:SHKConnectionStatusLoginFailed]) {

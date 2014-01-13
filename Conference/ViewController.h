@@ -15,9 +15,11 @@
 @property (readwrite, nonatomic) IBOutlet UIView *prevVideoUIView;
 
 - (IBAction)toggleUser:(id)sender;
+- (IBAction)runTest:(id)sender;
 - (IBAction)login:(id)sender;
 - (IBAction)makeCall:(id)sender;
 
+@property (strong, nonatomic) IBOutlet UIButton *runTestOutlet;
 @property (strong, nonatomic) IBOutlet UIButton *toggleUserOutlet;
 @property (strong, nonatomic) IBOutlet UIButton *loginOutlet;
 @property (strong, nonatomic) IBOutlet UIButton *makeCallOutlet;
