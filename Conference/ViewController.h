@@ -16,9 +16,11 @@
 
 - (IBAction)toggleUser:(id)sender;
 - (IBAction)runTest:(id)sender;
+- (IBAction)share:(id)sender;
 - (IBAction)login:(id)sender;
 - (IBAction)makeCall:(id)sender;
 
+@property (strong, nonatomic) IBOutlet UIButton *shareOutlet;
 @property (strong, nonatomic) IBOutlet UIButton *runTestOutlet;
 @property (strong, nonatomic) IBOutlet UIButton *toggleUserOutlet;
 @property (strong, nonatomic) IBOutlet UIButton *loginOutlet;

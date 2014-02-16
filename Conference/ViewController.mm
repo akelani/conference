@@ -53,6 +53,10 @@ static NSString *kUser2password = @"harper98";
                                              selector:@selector(gotUserNotification:)
                                                  name:SHKUserMessageReceivedNotification
                                                object:nil];
+    
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(shkRemoteClientStatusChanged:) name:SHKRemoteClientStateChangedNotification object:nil];
+    
+    [self getRandomColor];
 }
 
 - (void) viewDidDisappear:(BOOL)animated {
@@ -81,11 +85,106 @@ static NSString *kUser2password = @"harper98";
 
 - (IBAction)toggleUser:(id)sender {
     if([[[self.toggleUserOutlet titleLabel] text] isEqualToString:@"User 1"]){
-        [self.toggleUserOutlet setTitle: @"User 2" forState: UIControlStateNormal];
+           [self.toggleUserOutlet setTitle: @"User 2" forState: UIControlStateNormal];
     }else{
-        [self.toggleUserOutlet setTitle: @"User 1" forState: UIControlStateNormal];
+            [self.toggleUserOutlet setTitle: @"User 1" forState: UIControlStateNormal];
     }
 }
+
+//self.toggleUserOutlet.hidden = false;
+//self.shareOutlet.hidden = true;
+- (IBAction)share:(id)sender {
+    if([[[self.shareOutlet titleLabel] text] isEqualToString:@"Share"]){
+        [self.shareOutlet setTitle: @"End Share" forState: UIControlStateNormal];
+        
+        [ShowKit setState:SHKVideoInputDeviceScreen
+                   forKey:SHKVideoInputDeviceKey];
+        
+        [ShowKit setState:SHKGestureCaptureModeReceive
+                   forKey:SHKGestureCaptureModeKey];
+        
+        [ShowKit setState:SHKGestureCaptureLocalIndicatorsOn forKey:SHKGestureCaptureLocalIndicatorsModeKey];
+        
+    }else{
+        [self.shareOutlet setTitle: @"Share" forState: UIControlStateNormal];
+        [ShowKit setState:SHKVideoInputDeviceFrontCamera
+                   forKey:SHKVideoInputDeviceKey];
+        
+        [ShowKit setState:SHKGestureCaptureModeOff
+                   forKey:SHKGestureCaptureModeKey];
+        
+        
+        [ShowKit setState:SHKGestureCaptureLocalIndicatorsOff forKey:SHKGestureCaptureLocalIndicatorsModeKey];
+        
+    }
+}
+
+
+- (void) shkRemoteClientStatusChanged: (NSNotification*) notification
+{
+    SHKNotification* obj = [notification object] ;
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        
+        if([obj.Key isEqualToString:SHKRemoteClientVideoInputKey])
+        {
+            if([(NSString*)obj.Value isEqualToString:SHKRemoteClientVideoInputScreen])
+            {
+                NSLog(@"Screen mode enabled!");
+                [ShowKit setState:SHKVideoScaleModeFit forKey: SHKVideoScaleModeKey];
+                [ShowKit setState:SHKGestureCaptureLocalIndicatorsOn forKey:SHKGestureCaptureLocalIndicatorsModeKey];
+                if (![[ShowKit getStateForKey:SHKGestureCaptureModeKey] isEqualToString:SHKGestureCaptureModeBroadcast]) {
+                    [ShowKit setState:SHKGestureCaptureModeBroadcast forKey:SHKGestureCaptureModeKey];
+                }
+            } else {
+                [ShowKit setState:SHKVideoScaleModeFill forKey: SHKVideoScaleModeKey];
+                [ShowKit setState:SHKGestureCaptureLocalIndicatorsOff forKey:SHKGestureCaptureLocalIndicatorsModeKey];
+                if (![[ShowKit getStateForKey:SHKGestureCaptureModeKey] isEqualToString:SHKGestureCaptureModeOff]) {
+                    [ShowKit setState:SHKGestureCaptureLocalIndicatorsOff forKey:SHKGestureCaptureLocalIndicatorsModeKey];
+                }
+            }
+        }
+        else if([obj.Key isEqualToString:SHKRemoteClientDeviceOrientationKey])
+        {
+            if([(NSString*)obj.Value isEqualToString:SHKRemoteClientDeviceOrientationLandscapeLeft])
+            {
+            }
+            else if([(NSString*)obj.Value isEqualToString:SHKRemoteClientDeviceOrientationLandscapeRight])
+            {
+            }
+            else if([(NSString*)obj.Value isEqualToString:SHKRemoteClientDeviceOrientationPortrait])
+            {
+            }
+            else
+            {
+            }
+        }
+        else if([obj.Key isEqualToString:SHKRemoteClientGestureStateKey])
+        {
+            if([(NSString*)obj.Value isEqualToString:SHKRemoteClientGestureStateStarted])
+            {
+            } else {
+            }
+        }
+        else if([obj.Key isEqualToString:SHKRemoteClientVideoStateKey])
+        {
+            if([(NSString*)obj.Value isEqualToString:SHKRemoteClientVideoStateStarted])
+            {
+            } else {
+            }
+        }
+        else if([obj.Key isEqualToString:SHKRemoteClientAudioStateKey])
+        {
+            if([(NSString*)obj.Value isEqualToString:SHKRemoteClientAudioStateStarted])
+            {
+            } else {
+            }
+            
+        }
+    });
+}
+
 
 - (IBAction)login:(id)sender {
     if ([[[self.loginOutlet titleLabel] text] isEqualToString:@"Login"]) {
@@ -94,9 +193,11 @@ static NSString *kUser2password = @"harper98";
         }else{
             [ShowKit login:kUser2login password:kUser2password];
         }
+        self.toggleUserOutlet.hidden = TRUE;
     }else{
         [ShowKit logout];
         [self.loginOutlet setTitle:@"Login" forState:UIControlStateNormal];
+        self.toggleUserOutlet.hidden = false;
     }
 }
 
@@ -114,6 +215,16 @@ static NSString *kUser2password = @"harper98";
         [self.makeCallOutlet setTitle:@"Call" forState:UIControlStateNormal];
     }
 }
+
+
+- (void) getRandomColor {
+    CGFloat hue = ( arc4random() % 256 / 256.0 );  //  0.0 to 1.0
+    CGFloat saturation = ( arc4random() % 128 / 256.0 ) + 0.5;  //  0.5 to 1.0, away from white
+    CGFloat brightness = ( arc4random() % 128 / 256.0 ) + 0.5;
+    UIColor *temp = [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
+    [self.mainVideoUIView setBackgroundColor:temp];
+}
+
 //First, set up the handle the notification
 - (void) gotUserNotification: (NSNotification*) n
 {
@@ -146,6 +257,13 @@ static NSString *kUser2password = @"harper98";
     
     if ([v isEqualToString:SHKConnectionStatusCallTerminated]){
         [self.makeCallOutlet setTitle:@"Call" forState:UIControlStateNormal];
+        
+        [ShowKit setState:SHKVideoInputDeviceFrontCamera
+                   forKey:SHKVideoInputDeviceKey];
+        
+        [ShowKit setState:SHKGestureCaptureModeOff
+                   forKey:SHKGestureCaptureModeKey];
+        
     } else if ([v isEqualToString:SHKConnectionStatusLoggedIn]) {
         [self.loginOutlet setTitle:@"Logout" forState:UIControlStateNormal];
     } else if ([v isEqualToString:SHKConnectionStatusLoginFailed]) {
