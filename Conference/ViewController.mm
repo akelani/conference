@@ -8,10 +8,15 @@
 #import "TargetConditionals.h"
 #import "ViewController.h"
 
-//static NSString *kUser1login = @"521.tom";
-//static NSString *kUser2login = @"521.tharper";
+#define SK_DEVEL 0
+#if SK_DEVEL
 static NSString *kUser1login = @"422.tom";
 static NSString *kUser2login = @"422.tharper";
+#else
+static NSString *kUser1login = @"521.tom1";
+static NSString *kUser2login = @"521.tom2";//@"12.agent2";
+#endif
+
 static NSString *kUser1password = @"harper98";
 static NSString *kUser2password = @"harper98";
 
@@ -71,6 +76,7 @@ static NSString *kUser2password = @"harper98";
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 - (IBAction)runTest:(id)sender {
     
     NSString* tempmsg = @"test sending a big message";
