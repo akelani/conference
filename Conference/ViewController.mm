@@ -44,8 +44,8 @@ static NSString *kUser2password = @"harper98";
     
     [simulatorAlert show];
     }
-    [ShowKit setState:self.mainVideoUIView forKey:SHKMainDisplayViewKey];
-    [ShowKit setState:self.prevVideoUIView forKey:SHKPreviewDisplayViewKey];
+    //[ShowKit setState:self.mainVideoUIView forKey:SHKMainDisplayViewKey];
+    //[ShowKit setState:self.prevVideoUIView forKey:SHKPreviewDisplayViewKey];
     [ShowKit setState:SHKVideoLocalPreviewEnabled forKey:SHKVideoLocalPreviewModeKey];
     
     //now listen for notification and log in.
@@ -60,7 +60,8 @@ static NSString *kUser2password = @"harper98";
                                                object:nil];
     
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(shkRemoteClientStatusChanged:) name:SHKRemoteClientStateChangedNotification object:nil];
-    
+
+
     [self getRandomColor];
 }
 
@@ -170,7 +171,9 @@ static NSString *kUser2password = @"harper98";
         {
             if([(NSString*)obj.Value isEqualToString:SHKRemoteClientGestureStateStarted])
             {
+                [SHKTouches shkSetDelegate:(id<SHKTouchesDelegate>)self];
             } else {
+                [SHKTouches shkSetDelegate:(id<SHKTouchesDelegate>)nil];
             }
         }
         else if([obj.Key isEqualToString:SHKRemoteClientVideoStateKey])
@@ -272,6 +275,10 @@ static NSString *kUser2password = @"harper98";
         
     } else if ([v isEqualToString:SHKConnectionStatusLoggedIn]) {
         [self.loginOutlet setTitle:@"Logout" forState:UIControlStateNormal];
+//#define TEST_VIDEO_CAPTURE
+#ifdef TEST_VIDEO_CAPTURE
+        [SHKEncoder shkSetDelegate:(id<SHKVideoCaptureDelegate>)self];
+#endif
     } else if ([v isEqualToString:SHKConnectionStatusLoginFailed]) {
         [ShowKit hangupCall];
     } else if ([v isEqualToString:SHKConnectionStatusCallIncoming]) {
@@ -313,5 +320,64 @@ static NSString *kUser2password = @"harper98";
             break;
     }
 }
+
+//SHKTouchesDelegate
+- (void)shkTouchesBegan:(CGPoint)point {
+    printf("got touch began");
+}
+- (void)shkTouchesMoved:(CGPoint)point {
+    printf("got touch moved");
+}
+- (void)shkTouchesEnded:(CGPoint)point {
+    printf("got touch ended");
+}
+- (void)shkTouchesCancelled:(CGPoint)point {
+    printf("got touch cancelled");
+}
+
+//SHKVideoCaptureDelegate
+- (void)StartCapture {
+    printf("got touch moved");
+    
+    self.encodeTimer = [NSTimer scheduledTimerWithTimeInterval:(1.f/30.f) target:self selector:@selector(encodeFrame) userInfo:nil repeats:YES];
+}
+- (void)StopCapture {
+    [self.encodeTimer invalidate];
+    self.encodeTimer = nil;
+}
+- (void)Initialize:(int)width height:(int)height fps:(int)fps{
+    m_width = width;
+    m_height = height;
+}
+
+-(void)encodeFrame {
+    
+#ifdef TEST_VIDEO_CAPTURE
+    int len = (m_width*m_height*3)>>1;
+    unsigned char* pBuf = new unsigned char[len];
+    unsigned char* pBuf1 = pBuf + (m_width*m_height);
+    unsigned char* pBuf2 = pBuf + (5*m_width*m_height)/4;
+    
+    int x, y, i;
+    i = m_count++;
+    
+    for(y=0;y<m_height;y++) {
+        for(x=0;x<m_width;x++) {
+            pBuf[y * m_width + x] = x + y + i * 3;
+        }
+    }
+    for(y=0;y<m_height/2;y++) {
+        for(x=0;x<m_width/2;x++) {
+            pBuf1[y * (m_width>>1) + x] = 128 + y + i * 2;
+            pBuf2[y * (m_width>>1) + x] = 64 + x + i * 5;
+        }
+    }
+    
+    [SHKEncoder shkEncodeFrame:pBuf width:m_width height:m_height length:len colorspace:kCVPixelFormatType_420YpCbCr8Planar mediatime:m_count];
+    
+    delete pBuf;
+#endif
+}
+
 
 @end
