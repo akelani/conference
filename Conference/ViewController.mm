@@ -171,12 +171,15 @@ static NSString *kUser2password = @"harper98";
         }
         else if([obj.Key isEqualToString:SHKRemoteClientGestureStateKey])
         {
+            
+#ifdef TEST_GESTURE_TOUCHES
             if([(NSString*)obj.Value isEqualToString:SHKRemoteClientGestureStateStarted])
             {
                 [SHKTouches shkSetDelegate:(id<SHKTouchesDelegate>)self];
             } else {
                 [SHKTouches shkSetDelegate:(id<SHKTouchesDelegate>)nil];
             }
+#endif
         }
         else if([obj.Key isEqualToString:SHKRemoteClientVideoStateKey])
         {
@@ -278,7 +281,7 @@ static NSString *kUser2password = @"harper98";
     } else if ([v isEqualToString:SHKConnectionStatusLoggedIn]) {
         [self.loginOutlet setTitle:@"Logout" forState:UIControlStateNormal];
 
-#ifdef TEST_VIDEO_CAPTURE
+#if (TEST_VIDEO_CAPTURE)
         [SHKEncoder shkSetDelegate:(id<SHKVideoCaptureDelegate>)self];
 #endif
     } else if ([v isEqualToString:SHKConnectionStatusLoginFailed]) {
