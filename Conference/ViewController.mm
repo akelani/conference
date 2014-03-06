@@ -44,8 +44,10 @@ static NSString *kUser2password = @"harper98";
     
     [simulatorAlert show];
     }
-    //[ShowKit setState:self.mainVideoUIView forKey:SHKMainDisplayViewKey];
-    //[ShowKit setState:self.prevVideoUIView forKey:SHKPreviewDisplayViewKey];
+#if !TESTING_DYNAMIC_VIEWS
+    [ShowKit setState:self.mainVideoUIView forKey:SHKMainDisplayViewKey];
+    [ShowKit setState:self.prevVideoUIView forKey:SHKPreviewDisplayViewKey];
+#endif
     [ShowKit setState:SHKVideoLocalPreviewEnabled forKey:SHKVideoLocalPreviewModeKey];
     
     //now listen for notification and log in.
@@ -275,7 +277,7 @@ static NSString *kUser2password = @"harper98";
         
     } else if ([v isEqualToString:SHKConnectionStatusLoggedIn]) {
         [self.loginOutlet setTitle:@"Logout" forState:UIControlStateNormal];
-//#define TEST_VIDEO_CAPTURE
+
 #ifdef TEST_VIDEO_CAPTURE
         [SHKEncoder shkSetDelegate:(id<SHKVideoCaptureDelegate>)self];
 #endif
@@ -294,13 +296,13 @@ static NSString *kUser2password = @"harper98";
     else if ([v isEqualToString:SHKConnectionStatusInCall]) {
         
         NSLog(@"In Call");
-        
+#if TESTING_DYNAMIC_VIEWS
         //set the main video view
         [ShowKit setState:self.mainVideoUIView forKey:SHKMainDisplayViewKey];
         
         //set the main preview view
         [ShowKit setState:self.prevVideoUIView forKey:SHKPreviewDisplayViewKey];
-        
+#endif
     }
 }
 
@@ -321,6 +323,8 @@ static NSString *kUser2password = @"harper98";
     }
 }
 
+
+#if TEST_GESTURE_TOUCHES
 //SHKTouchesDelegate
 - (void)shkTouchesBegan:(CGPoint)point {
     printf("got touch began");
@@ -334,11 +338,11 @@ static NSString *kUser2password = @"harper98";
 - (void)shkTouchesCancelled:(CGPoint)point {
     printf("got touch cancelled");
 }
+#endif
 
+#if TEST_VIDEO_CAPTURE
 //SHKVideoCaptureDelegate
 - (void)StartCapture {
-    printf("got touch moved");
-    
     self.encodeTimer = [NSTimer scheduledTimerWithTimeInterval:(1.f/30.f) target:self selector:@selector(encodeFrame) userInfo:nil repeats:YES];
 }
 - (void)StopCapture {
@@ -352,7 +356,6 @@ static NSString *kUser2password = @"harper98";
 
 -(void)encodeFrame {
     
-#ifdef TEST_VIDEO_CAPTURE
     int len = (m_width*m_height*3)>>1;
     unsigned char* pBuf = new unsigned char[len];
     unsigned char* pBuf1 = pBuf + (m_width*m_height);
@@ -376,8 +379,8 @@ static NSString *kUser2password = @"harper98";
     [SHKEncoder shkEncodeFrame:pBuf width:m_width height:m_height length:len colorspace:kCVPixelFormatType_420YpCbCr8Planar mediatime:m_count];
     
     delete pBuf;
-#endif
 }
 
+#endif
 
 @end
