@@ -306,7 +306,17 @@ static NSString *kUser2password = @"harper98";
         //set the main preview view
         [ShowKit setState:self.prevVideoUIView forKey:SHKPreviewDisplayViewKey];
 #endif
+#if TESTING_DECODER_CALLBACK
+        [ShowKit setVideoBufferCallback:^(uint8_t*data, long width, long height, PixelFormat pixelFormat, BOOL isEncoding) {
+            [self renderWithData:data width:width height:height pixelFormat:pixelFormat isEncoding:isEncoding];
+        }];
+#endif
     }
+}
+
+
+-(void)renderWithData:(uint8_t*)data width:(long)width height:(long)height pixelFormat:(PixelFormat)pixelFormat isEncoding:(BOOL)isEncoding {
+    
 }
 
 - (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex

@@ -13,6 +13,7 @@
 #define TESTING_DYNAMIC_VIEWS 0
 #define TEST_GESTURE_TOUCHES 0
 #define TEST_VIDEO_CAPTURE 0
+#define TESTING_DECODER_CALLBACK 0
 
 @interface ViewController : UIViewController <UIAlertViewDelegate
 #if TESTING_VIDEO_CAPTURE
@@ -51,5 +52,6 @@
 - (void)shkTouchesEnded:(CGPoint)point;
 - (void)shkTouchesCancelled:(CGPoint)point;
 #endif
+-(void)renderWithData:(uint8_t*)data width:(long)width height:(long)height pixelFormat:(PixelFormat)pixelFormat isEncoding:(BOOL)isEncoding;
 
 @end
