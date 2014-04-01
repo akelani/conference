@@ -45,7 +45,9 @@ static NSString *kUser2password = @"harper98";
     [simulatorAlert show];
     }
 #if !TESTING_DYNAMIC_VIEWS
+#if TESTING_DECODER_CALLBACK==0
     [ShowKit setState:self.mainVideoUIView forKey:SHKMainDisplayViewKey];
+#endif
     [ShowKit setState:self.prevVideoUIView forKey:SHKPreviewDisplayViewKey];
 #endif
     [ShowKit setState:SHKVideoLocalPreviewEnabled forKey:SHKVideoLocalPreviewModeKey];
@@ -223,7 +225,7 @@ static NSString *kUser2password = @"harper98";
         }else{
             [ShowKit initiateCallWithSubscriber:kUser1login];
         }
-        [self.makeCallOutlet setTitle:@"End Call" forState:UIControlStateNormal];
+        [self.makeCallOutlet setTitle:@"End" forState:UIControlStateNormal];
     }else{
         [ShowKit hangupCall];
         [self.makeCallOutlet setTitle:@"Call" forState:UIControlStateNormal];
@@ -324,7 +326,7 @@ static NSString *kUser2password = @"harper98";
     switch (alertView.tag) {
         case 0:
             if (buttonIndex == 0) {
-                [self.makeCallOutlet setTitle:@"End Call" forState:UIControlStateNormal];
+                [self.makeCallOutlet setTitle:@"End" forState:UIControlStateNormal];
                 [ShowKit acceptCall];
             }else{
                 [ShowKit rejectCall];
@@ -389,7 +391,7 @@ static NSString *kUser2password = @"harper98";
         }
     }
     
-    [SHKEncoder shkEncodeFrame:pBuf width:m_width height:m_height length:len colorspace:kCVPixelFormatType_420YpCbCr8Planar mediatime:m_count];
+    [SHKEncoder shkEncodeFrame:pBuf width:m_width height:m_height length:len colorspace:kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange mediatime:m_count];
     
     delete pBuf;
 }
