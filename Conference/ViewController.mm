@@ -51,6 +51,9 @@ static NSString *kUser2password = @"harper98";
     [ShowKit setState:self.prevVideoUIView forKey:SHKPreviewDisplayViewKey];
 #endif
     [ShowKit setState:SHKVideoLocalPreviewEnabled forKey:SHKVideoLocalPreviewModeKey];
+
+    // Enable software encoder- must be done before logging in
+    //[ShowKit setState:SHKVideoDecodeDeviceSoftware forKey:SHKVideoDecodeDeviceKey];
     
     //now listen for notification and log in.
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -106,23 +109,19 @@ static NSString *kUser2password = @"harper98";
 //self.shareOutlet.hidden = true;
 - (IBAction)share:(id)sender {
     if([[[self.shareOutlet titleLabel] text] isEqualToString:@"Share"]){
-        [self.shareOutlet setTitle: @"End Share" forState: UIControlStateNormal];
+        [self.shareOutlet setTitle: @"Unshare" forState: UIControlStateNormal];
         
-        [ShowKit setState:SHKVideoInputDeviceScreen
-                   forKey:SHKVideoInputDeviceKey];
+        [ShowKit setState:SHKVideoInputDeviceScreen forKey:SHKVideoInputDeviceKey];
         
-        [ShowKit setState:SHKGestureCaptureModeReceive
-                   forKey:SHKGestureCaptureModeKey];
+        [ShowKit setState:SHKGestureCaptureModeReceive forKey:SHKGestureCaptureModeKey];
         
         [ShowKit setState:SHKGestureCaptureLocalIndicatorsOn forKey:SHKGestureCaptureLocalIndicatorsModeKey];
         
     }else{
         [self.shareOutlet setTitle: @"Share" forState: UIControlStateNormal];
-        [ShowKit setState:SHKVideoInputDeviceFrontCamera
-                   forKey:SHKVideoInputDeviceKey];
+        [ShowKit setState:SHKVideoInputDeviceFrontCamera forKey:SHKVideoInputDeviceKey];
         
-        [ShowKit setState:SHKGestureCaptureModeOff
-                   forKey:SHKGestureCaptureModeKey];
+        [ShowKit setState:SHKGestureCaptureModeOff forKey:SHKGestureCaptureModeKey];
         
         
         [ShowKit setState:SHKGestureCaptureLocalIndicatorsOff forKey:SHKGestureCaptureLocalIndicatorsModeKey];
@@ -138,37 +137,19 @@ static NSString *kUser2password = @"harper98";
     dispatch_async(dispatch_get_main_queue(), ^{
         
         
-        if([obj.Key isEqualToString:SHKRemoteClientVideoInputKey])
+        if ([obj.Key isEqualToString:SHKRemoteClientVideoInputKey])
         {
             if([(NSString*)obj.Value isEqualToString:SHKRemoteClientVideoInputScreen])
             {
                 NSLog(@"Screen mode enabled!");
-                [ShowKit setState:SHKVideoScaleModeFit forKey: SHKVideoScaleModeKey];
+                
+                //[ShowKit setState:SHKVideoScaleModeFit forKey: SHKVideoScaleModeKeyInternal];
                 [ShowKit setState:SHKGestureCaptureLocalIndicatorsOn forKey:SHKGestureCaptureLocalIndicatorsModeKey];
-                if (![[ShowKit getStateForKey:SHKGestureCaptureModeKey] isEqualToString:SHKGestureCaptureModeBroadcast]) {
-                    [ShowKit setState:SHKGestureCaptureModeBroadcast forKey:SHKGestureCaptureModeKey];
-                }
+                [ShowKit setState:SHKGestureCaptureModeBroadcast forKey:SHKGestureCaptureModeKey];
             } else {
-                [ShowKit setState:SHKVideoScaleModeFill forKey: SHKVideoScaleModeKey];
+                //NSString * mode = [ShowKit getStateForKey:SHKVideoScaleModeKey];
+                //[ShowKit setState:mode forKey: SHKVideoScaleModeKeyInternal];
                 [ShowKit setState:SHKGestureCaptureLocalIndicatorsOff forKey:SHKGestureCaptureLocalIndicatorsModeKey];
-                if (![[ShowKit getStateForKey:SHKGestureCaptureModeKey] isEqualToString:SHKGestureCaptureModeOff]) {
-                    [ShowKit setState:SHKGestureCaptureLocalIndicatorsOff forKey:SHKGestureCaptureLocalIndicatorsModeKey];
-                }
-            }
-        }
-        else if([obj.Key isEqualToString:SHKRemoteClientDeviceOrientationKey])
-        {
-            if([(NSString*)obj.Value isEqualToString:SHKRemoteClientDeviceOrientationLandscapeLeft])
-            {
-            }
-            else if([(NSString*)obj.Value isEqualToString:SHKRemoteClientDeviceOrientationLandscapeRight])
-            {
-            }
-            else if([(NSString*)obj.Value isEqualToString:SHKRemoteClientDeviceOrientationPortrait])
-            {
-            }
-            else
-            {
             }
         }
         else if([obj.Key isEqualToString:SHKRemoteClientGestureStateKey])
