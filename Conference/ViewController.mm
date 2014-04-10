@@ -87,12 +87,12 @@ static NSString *kUser2password = @"harper98";
 
 - (IBAction)runTest:(id)sender {
     
-    NSString* tempmsg = @"test sending a big message";
+    NSString* tempmsg = @"test sending a big message\0";
     NSData *tempmsgD = [tempmsg dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:true];
     [ShowKit sendMessage:tempmsgD];
     
 
-    NSString* tempcmd = @"test sending a big cmd";
+    NSString* tempcmd = @"test sending a big cmd\0";
     NSData *tempmsgC = [tempcmd dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:true];
     [ShowKit sendCommand:tempmsgC];
 }
