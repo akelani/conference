@@ -53,7 +53,7 @@ static NSString *kUser2password = @"harper98";
     [ShowKit setState:SHKVideoLocalPreviewEnabled forKey:SHKVideoLocalPreviewModeKey];
 
     // Enable software encoder- must be done before logging in
-    //[ShowKit setState:SHKVideoDecodeDeviceSoftware forKey:SHKVideoDecodeDeviceKey];
+    [ShowKit setState:SHKVideoDecodeDeviceSoftware forKey:SHKVideoDecodeDeviceKey];
     
     //now listen for notification and log in.
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -87,14 +87,25 @@ static NSString *kUser2password = @"harper98";
 
 - (IBAction)runTest:(id)sender {
     
-    NSString* tempmsg = @"test sending a big message\0";
-    NSData *tempmsgD = [tempmsg dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:true];
-    [ShowKit sendMessage:tempmsgD];
+    if([[[self.runTestOutlet titleLabel] text] isEqualToString:@"Test"]){
+        
+        NSString* tempmsg = @"test sending a big message\0";
+        NSData *tempmsgD = [tempmsg dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:true];
+        [ShowKit sendMessage:tempmsgD];
+        
+        
+        NSString* tempcmd = @"test sending a big cmd\0";
+        NSData *tempmsgC = [tempcmd dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:true];
+        [ShowKit sendCommand:tempmsgC];
+    }
     
-
-    NSString* tempcmd = @"test sending a big cmd\0";
-    NSData *tempmsgC = [tempcmd dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:true];
-    [ShowKit sendCommand:tempmsgC];
+    if([[[self.runTestOutlet titleLabel] text] isEqualToString:@"DrawOff"]){
+        [self.runTestOutlet setTitle: @"DrawOn" forState: UIControlStateNormal];
+        [ShowKit setState:SHKDrawModeOn forKey:SHKDrawMode];
+    } else {
+        [self.runTestOutlet setTitle: @"DrawOff" forState: UIControlStateNormal];
+        [ShowKit setState:SHKDrawModeOff forKey:SHKDrawMode];
+    }
 }
 
 - (IBAction)toggleUser:(id)sender {
@@ -110,6 +121,7 @@ static NSString *kUser2password = @"harper98";
 - (IBAction)share:(id)sender {
     if([[[self.shareOutlet titleLabel] text] isEqualToString:@"Share"]){
         [self.shareOutlet setTitle: @"Unshare" forState: UIControlStateNormal];
+        [self.runTestOutlet setTitle: @"DrawOff" forState: UIControlStateNormal];
         
         [ShowKit setState:SHKVideoInputDeviceScreen forKey:SHKVideoInputDeviceKey];
         
@@ -119,12 +131,14 @@ static NSString *kUser2password = @"harper98";
         
     }else{
         [self.shareOutlet setTitle: @"Share" forState: UIControlStateNormal];
+        [self.runTestOutlet setTitle: @"Test" forState: UIControlStateNormal];
         [ShowKit setState:SHKVideoInputDeviceFrontCamera forKey:SHKVideoInputDeviceKey];
         
         [ShowKit setState:SHKGestureCaptureModeOff forKey:SHKGestureCaptureModeKey];
         
         
         [ShowKit setState:SHKGestureCaptureLocalIndicatorsOff forKey:SHKGestureCaptureLocalIndicatorsModeKey];
+
         
     }
 }
