@@ -10,7 +10,7 @@
 #import <ShowKit/ShowKit.h>
 
 
-#define TESTING_DYNAMIC_VIEWS 0
+#define TESTING_DYNAMIC_VIEWS 1
 #define TEST_GESTURE_TOUCHES 0
 #define TEST_VIDEO_CAPTURE 0
 #define TESTING_DECODER_CALLBACK 0
@@ -41,6 +41,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *toggleUserOutlet;
 @property (strong, nonatomic) IBOutlet UIButton *loginOutlet;
 @property (strong, nonatomic) IBOutlet UIButton *makeCallOutlet;
+
 #if TESTING_VIDEO_CAPTURE
 - (void)StartCapture;
 - (void)StopCapture

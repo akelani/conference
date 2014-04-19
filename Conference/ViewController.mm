@@ -44,6 +44,7 @@ static NSString *kUser2password = @"harper98";
     
     [simulatorAlert show];
     }
+    // Showkit gets allocated on the first call to it
 #if !TESTING_DYNAMIC_VIEWS
 #if TESTING_DECODER_CALLBACK==0
     [ShowKit setState:self.mainVideoUIView forKey:SHKMainDisplayViewKey];
@@ -59,11 +60,16 @@ static NSString *kUser2password = @"harper98";
     [[NSNotificationCenter defaultCenter] addObserver:self
                 selector:@selector(connectionStateChanged:)
                     name:SHKConnectionStatusChangedNotification
-                  object:nil];
+                                               object:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(gotUserNotification:)
                                                  name:SHKUserMessageReceivedNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(gotDataNotification:)
+                                                 name:SHKUserDataReceivedNotification
                                                object:nil];
     
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(shkRemoteClientStatusChanged:) name:SHKRemoteClientStateChangedNotification object:nil];
@@ -77,6 +83,7 @@ static NSString *kUser2password = @"harper98";
     
     [[NSNotificationCenter defaultCenter] removeObserver:self name:SHKConnectionStatusChangedNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:SHKUserMessageReceivedNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:SHKUserDataReceivedNotification object:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -89,14 +96,14 @@ static NSString *kUser2password = @"harper98";
     
     if([[[self.runTestOutlet titleLabel] text] isEqualToString:@"Test"]){
         
-        NSString* tempmsg = @"test sending a big message\0";
-        NSData *tempmsgD = [tempmsg dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:true];
-        [ShowKit sendMessage:tempmsgD];
+        //NSString* tempmsg = @"test sending a big message\0";
+        //NSData *tempmsgD = [tempmsg dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:true];
+        //[ShowKit sendData:tempmsgD];
         
         
-        NSString* tempcmd = @"test sending a big cmd\0";
+        NSString* tempcmd = @"test sending text\0";
         NSData *tempmsgC = [tempcmd dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:true];
-        [ShowKit sendCommand:tempmsgC];
+        [ShowKit sendText:tempmsgC];
     }
     
     if([[[self.runTestOutlet titleLabel] text] isEqualToString:@"DrawOff"]){
@@ -124,22 +131,15 @@ static NSString *kUser2password = @"harper98";
         [self.runTestOutlet setTitle: @"DrawOff" forState: UIControlStateNormal];
         
         [ShowKit setState:SHKVideoInputDeviceScreen forKey:SHKVideoInputDeviceKey];
-        
         [ShowKit setState:SHKGestureCaptureModeReceive forKey:SHKGestureCaptureModeKey];
-        
         [ShowKit setState:SHKGestureCaptureLocalIndicatorsOn forKey:SHKGestureCaptureLocalIndicatorsModeKey];
         
     }else{
         [self.shareOutlet setTitle: @"Share" forState: UIControlStateNormal];
         [self.runTestOutlet setTitle: @"Test" forState: UIControlStateNormal];
         [ShowKit setState:SHKVideoInputDeviceFrontCamera forKey:SHKVideoInputDeviceKey];
-        
         [ShowKit setState:SHKGestureCaptureModeOff forKey:SHKGestureCaptureModeKey];
-        
-        
         [ShowKit setState:SHKGestureCaptureLocalIndicatorsOff forKey:SHKGestureCaptureLocalIndicatorsModeKey];
-
-        
     }
 }
 
@@ -236,25 +236,38 @@ static NSString *kUser2password = @"harper98";
     [self.mainVideoUIView setBackgroundColor:temp];
 }
 
-//First, set up the handle the notification
+// this channel is primarily for short text messages/commands, and is reliable
 - (void) gotUserNotification: (NSNotification*) n
 {
-    SHKNotification* s ;
-    NSData* d;
-    NSString * v ;
-    s = (SHKNotification*) [n object];
-    d = (NSData*)s.Value;
-    v = (NSString*)[[NSString alloc] initWithData:d encoding:NSASCIIStringEncoding];
+    SHKNotification* s = (SHKNotification*) [n object];
+    NSData* d = (NSData*)s.Value;
+    NSString * v = (NSString*)[[NSString alloc] initWithData:d encoding:NSASCIIStringEncoding];
     NSString* msg = [NSString stringWithFormat: @"msg receivd: \"%@\"?", v];
     
+    /*
     //swizzle same alert twice, crash
-    //UIAlertView *showMessage = [[UIAlertView alloc] initWithTitle:@"Incoming Message"
-    //message:msg delegate:nil cancelButtonTitle:@"Close" otherButtonTitles:@"Close", nil];
-    //static int cntr =0;
-    //[showMessage setTag:cntr++];
-    //[showMessage show];
+    UIAlertView *showMessage = [[UIAlertView alloc] initWithTitle:@"Incoming Message"
+    message:msg delegate:nil cancelButtonTitle:@"Close" otherButtonTitles:@"Close", nil];
+    static int cntr =0;
+    [showMessage setTag:cntr++];
+    [showMessage show];
+     */
 }
 
+
+// This channel is for dealing with binary data, you decide what to do here
+- (void) gotDataNotification: (NSNotification*) n
+{
+    SHKNotification* s ;
+    NSData*          v ;
+    
+    s = (SHKNotification*) [n object];
+    v = (NSData*)s.Value;
+    
+    NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:v];
+    NSString *msg = [unarchiver decodeObjectForKey: @"skmessage"];
+    [unarchiver finishDecoding];
+}
 
 //First, set up the handle the notification
 - (void) connectionStateChanged: (NSNotification*) n
@@ -302,6 +315,9 @@ static NSString *kUser2password = @"harper98";
         
         //set the main preview view
         [ShowKit setState:self.prevVideoUIView forKey:SHKPreviewDisplayViewKey];
+        
+        //set the main preview view
+       // [ShowKit setState:SHKVideoLocalPreviewEnabled forKey:SHKVideoLocalPreviewModeKey];
 #endif
 #if TESTING_DECODER_CALLBACK
         [ShowKit setVideoBufferCallback:^(uint8_t*data, long width, long height, PixelFormat pixelFormat, BOOL isEncoding) {
