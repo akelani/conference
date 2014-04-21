@@ -297,13 +297,32 @@ static NSString *kUser2password = @"harper98";
     } else if ([v isEqualToString:SHKConnectionStatusLoginFailed]) {
         [ShowKit hangupCall];
     } else if ([v isEqualToString:SHKConnectionStatusCallIncoming]) {
-        UIAlertView *callIncoming = [[UIAlertView alloc] initWithTitle:@"Call Incoming"
-                                                                    message:@"Would you like to accept the call?"
-                                                                   delegate:self
-                                                          cancelButtonTitle:@"Accept"
-                                                          otherButtonTitles:@"Reject", nil];
-        [callIncoming setTag:0];
-        [callIncoming show];
+
+        NSString * mode = [ShowKit getStateForKey:SHKAppBackgroundedKey];
+        if ([mode isEqualToString:SHKInForeground]) {
+            UIAlertView *callIncoming = [[UIAlertView alloc] initWithTitle:@"Call Incoming"
+                                                                   message:@"Would you like to accept the call?"
+                                                                  delegate:self
+                                                         cancelButtonTitle:@"Accept"
+                                                         otherButtonTitles:@"Reject", nil];
+            
+            
+            [callIncoming setTag:0];
+            [callIncoming show];
+        }
+        else
+        {
+            UILocalNotification *localNotif = [[UILocalNotification alloc] init];
+            localNotif.fireDate             = nil;
+            localNotif.hasAction            = YES;
+            localNotif.alertBody            = [NSString stringWithFormat:@"Incoming Call."];
+            localNotif.alertAction          = NSLocalizedString(@"Accept Call", nil);
+            localNotif.soundName            = UILocalNotificationDefaultSoundName;
+            localNotif.applicationIconBadgeNumber = 1;
+            
+            [[UIApplication sharedApplication]presentLocalNotificationNow:localNotif];
+        }
+        
     }
     
     else if ([v isEqualToString:SHKConnectionStatusInCall]) {
