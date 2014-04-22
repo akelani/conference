@@ -8,17 +8,12 @@
 #import "TargetConditionals.h"
 #import "ViewController.h"
 
-#define SK_DEVEL 0
-#if SK_DEVEL
-static NSString *kUser1login = @"422.tom";
-static NSString *kUser2login = @"422.tharper";
-#else
-static NSString *kUser1login = @"521.tom1";
-static NSString *kUser2login = @"521.tom2";//@"12.agent2";
-#endif
 
-static NSString *kUser1password = @"harper98";
-static NSString *kUser2password = @"harper98";
+static NSString *kUser1login = @"user1";
+static NSString *kUser2login = @"user2";
+
+static NSString *kUser1password = @"password1";
+static NSString *kUser2password = @"password2";
 
 @interface ViewController ()
 
