@@ -14,6 +14,8 @@
 #define TEST_GESTURE_TOUCHES 0
 #define TEST_VIDEO_CAPTURE 0
 #define TESTING_DECODER_CALLBACK 0
+#define TESTING_STATS 1
+
 
 @interface ViewController : UIViewController <UIAlertViewDelegate
 #if TESTING_VIDEO_CAPTURE
@@ -21,6 +23,9 @@
 #endif
 #if TESTING_GESTURE_TOUCHES
 ,SHKTouchesDelegate
+#endif
+#if TESTING_STATS
+,SHKStatsDelegate
 #endif
 >
 {
@@ -52,6 +57,9 @@
 - (void)shkTouchesMoved:(CGPoint)point;
 - (void)shkTouchesEnded:(CGPoint)point;
 - (void)shkTouchesCancelled:(CGPoint)point;
+#endif
+#if TESTING_STATS
+- (void)shkStatsNotification:(StatsStruct*)stats;
 #endif
 -(void)renderWithData:(uint8_t*)data width:(long)width height:(long)height pixelFormat:(PixelFormat)pixelFormat isEncoding:(BOOL)isEncoding;
 
