@@ -375,7 +375,8 @@ static NSString *kUser2password = @"harper98";
 #if TESTING_STATS
 - (void)shkStatsNotification:(StatsStruct*)stats
 {
-    
+    StatsStruct local;
+    memcpy(&local, stats, sizeof(StatsStruct));
 }
 #endif 
 
