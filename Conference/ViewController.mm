@@ -36,8 +36,9 @@ static NSString *kUser2password = @"harper98";
     [super viewDidAppear:animated];
     if (TARGET_IPHONE_SIMULATOR)
     {
+    //__SHOWKIT_VERSION__ == "0.8.6"
     UIAlertView *simulatorAlert = [[UIAlertView alloc]initWithTitle:@"ShowKit Warning"
-                                                      message:@"ShowKit cannot make or receive calls when running on the simulator."
+                                                      message:@"ShowKit requires version > 0.8.6 to make calls in the simulator"
                                                      delegate:self
                                             cancelButtonTitle:@"Ok"
                                             otherButtonTitles: nil];
