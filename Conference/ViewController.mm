@@ -13,12 +13,17 @@
 static NSString *kUser1login = @"422.tom";
 static NSString *kUser2login = @"422.tharper";
 #else
-static NSString *kUser1login = @"521.tom1";
-static NSString *kUser2login = @"521.tom2";//@"12.agent2";
+//static NSString *kUser1login = @"521.tom1";
+//static NSString *kUser2login = @"521.tom2";//@"12.agent2";
+static NSString *kUser1login = @"521.joni1";
+static NSString *kUser2login = @"521.joni2";//@"12.agent2";
 #endif
 
-static NSString *kUser1password = @"harper98";
-static NSString *kUser2password = @"harper98";
+//static NSString *kUser1password = @"harper98";
+//static NSString *kUser2password = @"harper98";
+
+static NSString *kUser1password = @"12341234";
+static NSString *kUser2password = @"12341234";
 
 @interface ViewController ()
 
@@ -90,6 +95,25 @@ static NSString *kUser2password = @"harper98";
     [[NSNotificationCenter defaultCenter] removeObserver:self name:SHKUserMessageReceivedNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:SHKUserDataReceivedNotification object:nil];
 }
+
+
+
+-(BOOL) shouldAutorotate
+{
+    return YES;
+}
+
+
+-(NSUInteger) supportedInterfaceOrientations
+{
+    NSUInteger   orientation = UIInterfaceOrientationMaskPortrait;
+    
+    orientation |=  UIInterfaceOrientationMaskPortraitUpsideDown;
+    orientation  |=  UIInterfaceOrientationMaskLandscapeLeft;
+    orientation  |= UIInterfaceOrientationMaskLandscapeRight;
+    return orientation;
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -205,6 +229,7 @@ static NSString *kUser2password = @"harper98";
 - (IBAction)login:(id)sender {
     if ([[[self.loginOutlet titleLabel] text] isEqualToString:@"Login"]) {
         if([[[self.toggleUserOutlet titleLabel] text] isEqualToString:@"User 1"]){
+        
             [ShowKit login:kUser1login password:kUser1password];
         }else{
             [ShowKit login:kUser2login password:kUser2password];
