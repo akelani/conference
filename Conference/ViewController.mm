@@ -10,20 +10,16 @@
 
 #define SK_DEVEL 0
 #if SK_DEVEL
-static NSString *kUser1login = @"422.tom";
-static NSString *kUser2login = @"422.tharper";
+static NSString *kUser1login = @"User1";
+static NSString *kUser2login = @"User2";
 #else
-//static NSString *kUser1login = @"521.tom1";
-//static NSString *kUser2login = @"521.tom2";//@"12.agent2";
-static NSString *kUser1login = @"521.joni1";
-static NSString *kUser2login = @"521.joni2";//@"12.agent2";
+static NSString *kUser1login = @"User1";
+static NSString *kUser2login = @"User2";
 #endif
 
-//static NSString *kUser1password = @"harper98";
-//static NSString *kUser2password = @"harper98";
 
-static NSString *kUser1password = @"12341234";
-static NSString *kUser2password = @"12341234";
+static NSString *kUser1password = @"11111111";
+static NSString *kUser2password = @"11111111";
 
 @interface ViewController ()
 
@@ -34,11 +30,17 @@ static NSString *kUser2password = @"12341234";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"viewDidLoad  (%f, %f)", self.mainVideoUIView.frame.size.width, self.mainVideoUIView.frame.size.height);
+    
 }
 
 - (void) viewDidAppear:(BOOL)animated
 {
+    NSLog(@"viewDidAppear  before (%f, %f)", self.mainVideoUIView.frame.size.width, self.mainVideoUIView.frame.size.height);
+
     [super viewDidAppear:animated];
+    NSLog(@"viewDidAppear  (%f, %f)", self.mainVideoUIView.frame.size.width, self.mainVideoUIView.frame.size.height);
+    
     if (TARGET_IPHONE_SIMULATOR)
     {
     //__SHOWKIT_VERSION__ == "0.8.6"
@@ -54,6 +56,9 @@ static NSString *kUser2password = @"12341234";
 #if !TESTING_DYNAMIC_VIEWS
 #if TESTING_DECODER_CALLBACK==0
     [ShowKit setState:self.mainVideoUIView forKey:SHKMainDisplayViewKey];
+    NSLog(@"viewDidAppear mainVideoUIView  (%f, %f)", self.mainVideoUIView.frame.size.width, self.mainVideoUIView.frame.size.height);
+    
+   
 #endif
     [ShowKit setState:self.prevVideoUIView forKey:SHKPreviewDisplayViewKey];
 #endif
@@ -107,12 +112,14 @@ static NSString *kUser2password = @"12341234";
 -(NSUInteger) supportedInterfaceOrientations
 {
     NSUInteger   orientation = UIInterfaceOrientationMaskPortrait;
-    
+
     orientation |=  UIInterfaceOrientationMaskPortraitUpsideDown;
     orientation  |=  UIInterfaceOrientationMaskLandscapeLeft;
-    orientation  |= UIInterfaceOrientationMaskLandscapeRight;
-    return orientation;
+   orientation  |= UIInterfaceOrientationMaskLandscapeRight;
+   return orientation;
 }
+
+
 
 
 - (void)didReceiveMemoryWarning
@@ -361,6 +368,7 @@ static NSString *kUser2password = @"12341234";
 #if TESTING_DYNAMIC_VIEWS
         //set the main video view
         [ShowKit setState:self.mainVideoUIView forKey:SHKMainDisplayViewKey];
+        NSLog(@"In Call mainVideo  (%f, %f)", self.mainVideoUIView.frame.size.width, self.mainVideoUIView.frame.size.height);
         
         //set the main preview view
         [ShowKit setState:self.prevVideoUIView forKey:SHKPreviewDisplayViewKey];
