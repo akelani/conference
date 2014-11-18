@@ -28,16 +28,11 @@ static NSString *kUser2password = @"11111111";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"viewDidLoad  (%f, %f)", self.mainVideoUIView.frame.size.width, self.mainVideoUIView.frame.size.height);
-    
 }
 
 - (void) viewDidAppear:(BOOL)animated
 {
-    NSLog(@"viewDidAppear  before (%f, %f)", self.mainVideoUIView.frame.size.width, self.mainVideoUIView.frame.size.height);
-
     [super viewDidAppear:animated];
-    NSLog(@"viewDidAppear  (%f, %f)", self.mainVideoUIView.frame.size.width, self.mainVideoUIView.frame.size.height);
     
     if (TARGET_IPHONE_SIMULATOR)
     {
@@ -54,8 +49,6 @@ static NSString *kUser2password = @"11111111";
 #if !TESTING_DYNAMIC_VIEWS
 #if TESTING_DECODER_CALLBACK==0
     [ShowKit setState:self.mainVideoUIView forKey:SHKMainDisplayViewKey];
-    NSLog(@"viewDidAppear mainVideoUIView  (%f, %f)", self.mainVideoUIView.frame.size.width, self.mainVideoUIView.frame.size.height);
-    
    
 #endif
     [ShowKit setState:self.prevVideoUIView forKey:SHKPreviewDisplayViewKey];
@@ -366,7 +359,6 @@ static NSString *kUser2password = @"11111111";
 #if TESTING_DYNAMIC_VIEWS
         //set the main video view
         [ShowKit setState:self.mainVideoUIView forKey:SHKMainDisplayViewKey];
-        NSLog(@"In Call mainVideo  (%f, %f)", self.mainVideoUIView.frame.size.width, self.mainVideoUIView.frame.size.height);
         
         //set the main preview view
         [ShowKit setState:self.prevVideoUIView forKey:SHKPreviewDisplayViewKey];
