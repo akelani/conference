@@ -10,15 +10,14 @@
 
 #define SK_DEVEL 0
 #if SK_DEVEL
-static NSString *kUser1login = @"422.tom";
-static NSString *kUser2login = @"422.tharper";
+static NSString *kUser1login = @"User1";
+static NSString *kUser2login = @"User2";
 #else
-static NSString *kUser1login = @"521.tom1";
-static NSString *kUser2login = @"521.tom2";//@"12.agent2";
+static NSString *kUser1login = @"User1";
+static NSString *kUser2login = @"User2";
 #endif
-
-static NSString *kUser1password = @"harper98";
-static NSString *kUser2password = @"harper98";
+static NSString *kUser1password = @"11111111";
+static NSString *kUser2password = @"11111111";
 
 @interface ViewController ()
 
@@ -34,6 +33,7 @@ static NSString *kUser2password = @"harper98";
 - (void) viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    
     if (TARGET_IPHONE_SIMULATOR)
     {
     //__SHOWKIT_VERSION__ == "0.8.6"
@@ -49,6 +49,7 @@ static NSString *kUser2password = @"harper98";
 #if !TESTING_DYNAMIC_VIEWS
 #if TESTING_DECODER_CALLBACK==0
     [ShowKit setState:self.mainVideoUIView forKey:SHKMainDisplayViewKey];
+   
 #endif
     [ShowKit setState:self.prevVideoUIView forKey:SHKPreviewDisplayViewKey];
 #endif
@@ -90,6 +91,27 @@ static NSString *kUser2password = @"harper98";
     [[NSNotificationCenter defaultCenter] removeObserver:self name:SHKUserMessageReceivedNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:SHKUserDataReceivedNotification object:nil];
 }
+
+
+
+-(BOOL) shouldAutorotate
+{
+    return YES;
+}
+
+
+-(NSUInteger) supportedInterfaceOrientations
+{
+    NSUInteger   orientation = UIInterfaceOrientationMaskPortrait;
+
+    orientation |=  UIInterfaceOrientationMaskPortraitUpsideDown;
+    orientation  |=  UIInterfaceOrientationMaskLandscapeLeft;
+   orientation  |= UIInterfaceOrientationMaskLandscapeRight;
+   return orientation;
+}
+
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -205,6 +227,7 @@ static NSString *kUser2password = @"harper98";
 - (IBAction)login:(id)sender {
     if ([[[self.loginOutlet titleLabel] text] isEqualToString:@"Login"]) {
         if([[[self.toggleUserOutlet titleLabel] text] isEqualToString:@"User 1"]){
+        
             [ShowKit login:kUser1login password:kUser1password];
         }else{
             [ShowKit login:kUser2login password:kUser2password];
