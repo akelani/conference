@@ -10,15 +10,15 @@
 
 #define SK_DEVEL 0
 #if SK_DEVEL
-static NSString *kUser1login = @"422.tom";
-static NSString *kUser2login = @"422.tharper";
+static NSString *kUser1login = @"";
+static NSString *kUser2login = @"";
 #else
-static NSString *kUser1login = @"521.tom1";
-static NSString *kUser2login = @"521.tom2";//@"12.agent2";
+static NSString *kUser1login = @"";
+static NSString *kUser2login = @"";
 #endif
 
-static NSString *kUser1password = @"harper98";
-static NSString *kUser2password = @"harper98";
+static NSString *kUser1password = @"";
+static NSString *kUser2password = @"";
 
 @interface ViewController ()
 
