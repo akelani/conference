@@ -10,14 +10,15 @@
 
 #define SK_DEVEL 0
 #if SK_DEVEL
-static NSString *kUser1login = @"User1";
-static NSString *kUser2login = @"User2";
+static NSString *kUser1login = @"";
+static NSString *kUser2login = @"";
 #else
-static NSString *kUser1login = @"User1";
-static NSString *kUser2login = @"User2";
+static NSString *kUser1login = @"";
+static NSString *kUser2login = @"";
 #endif
-static NSString *kUser1password = @"11111111";
-static NSString *kUser2password = @"11111111";
+
+static NSString *kUser1password = @"";
+static NSString *kUser2password = @"";
 
 @interface ViewController ()
 
@@ -33,7 +34,6 @@ static NSString *kUser2password = @"11111111";
 - (void) viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
     if (TARGET_IPHONE_SIMULATOR)
     {
     //__SHOWKIT_VERSION__ == "0.8.6"
@@ -49,14 +49,13 @@ static NSString *kUser2password = @"11111111";
 #if !TESTING_DYNAMIC_VIEWS
 #if TESTING_DECODER_CALLBACK==0
     [ShowKit setState:self.mainVideoUIView forKey:SHKMainDisplayViewKey];
-   
 #endif
     [ShowKit setState:self.prevVideoUIView forKey:SHKPreviewDisplayViewKey];
 #endif
     [ShowKit setState:SHKVideoLocalPreviewEnabled forKey:SHKVideoLocalPreviewModeKey];
 
     // Enable software encoder- must be done before logging in
-    [ShowKit setState:SHKVideoDecodeDeviceSoftware forKey:SHKVideoDecodeDeviceKey];
+    [ShowKit setState:SHKVideoDecodeDeviceAuto forKey:SHKVideoDecodeDeviceKey];
     
 #if TESTING_STATS
     [SHKStats shkSetDelegate:(id<SHKStatsDelegate>)self];
@@ -91,27 +90,6 @@ static NSString *kUser2password = @"11111111";
     [[NSNotificationCenter defaultCenter] removeObserver:self name:SHKUserMessageReceivedNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:SHKUserDataReceivedNotification object:nil];
 }
-
-
-
--(BOOL) shouldAutorotate
-{
-    return YES;
-}
-
-
--(NSUInteger) supportedInterfaceOrientations
-{
-    NSUInteger   orientation = UIInterfaceOrientationMaskPortrait;
-
-    orientation |=  UIInterfaceOrientationMaskPortraitUpsideDown;
-    orientation  |=  UIInterfaceOrientationMaskLandscapeLeft;
-   orientation  |= UIInterfaceOrientationMaskLandscapeRight;
-   return orientation;
-}
-
-
-
 
 - (void)didReceiveMemoryWarning
 {
@@ -227,7 +205,6 @@ static NSString *kUser2password = @"11111111";
 - (IBAction)login:(id)sender {
     if ([[[self.loginOutlet titleLabel] text] isEqualToString:@"Login"]) {
         if([[[self.toggleUserOutlet titleLabel] text] isEqualToString:@"User 1"]){
-        
             [ShowKit login:kUser1login password:kUser1password];
         }else{
             [ShowKit login:kUser2login password:kUser2password];
