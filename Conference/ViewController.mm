@@ -55,7 +55,7 @@ static NSString *kUser2password = @"";
     [ShowKit setState:SHKVideoLocalPreviewEnabled forKey:SHKVideoLocalPreviewModeKey];
 
     // Enable software encoder- must be done before logging in
-    [ShowKit setState:SHKVideoDecodeDeviceSoftware forKey:SHKVideoDecodeDeviceKey];
+    [ShowKit setState:SHKVideoDecodeDeviceAuto forKey:SHKVideoDecodeDeviceKey];
     
 #if TESTING_STATS
     [SHKStats shkSetDelegate:(id<SHKStatsDelegate>)self];
