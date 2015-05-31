@@ -8,15 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import <ShowKit/ShowKit.h>
+//#import "../GoogleAnalyticsServicesiOS/GoogleAnalytics/Library/GAI.h"
 
 
-#define TESTING_DYNAMIC_VIEWS 1
+#define TESTING_DYNAMIC_VIEWS 0
 #define TEST_GESTURE_TOUCHES 0
 #define TEST_VIDEO_CAPTURE 0
 #define TESTING_DECODER_CALLBACK 0
-#define TESTING_STATS 1
+#define TESTING_STATS 0
 
 
+//@interface ViewController : GAITrackedViewController <UIAlertViewDelegate
 @interface ViewController : UIViewController <UIAlertViewDelegate
 #if TESTING_VIDEO_CAPTURE
 ,SHKVideoCaptureDelegate

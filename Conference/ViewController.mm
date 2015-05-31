@@ -8,23 +8,20 @@
 #import "TargetConditionals.h"
 #import "ViewController.h"
 
-#define SK_DEVEL 0
-#if SK_DEVEL
-static NSString *kUser1login = @"";
-static NSString *kUser2login = @"";
-#else
-static NSString *kUser1login = @"";
-static NSString *kUser2login = @"";
-#endif
+//                                                                    #error TODO: To start using this project, copy-paste your API_KEY, DOMAIN & APP_ID and comment this line
 
+static NSString *kUser1login = @"";
+static NSString *kUser2login = @"";
 static NSString *kUser1password = @"";
 static NSString *kUser2password = @"";
 
-@interface ViewController ()
 
+@interface ViewController ()
+@property (strong, nonatomic) IBOutlet UITextField *userNameField;
 @end
 
 @implementation ViewController
+
 
 - (void)viewDidLoad
 {
@@ -34,6 +31,8 @@ static NSString *kUser2password = @"";
 - (void) viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    //self.screenName = @"home screen";// GAI
+
     if (TARGET_IPHONE_SIMULATOR)
     {
     //__SHOWKIT_VERSION__ == "0.8.6"
@@ -45,6 +44,10 @@ static NSString *kUser2password = @"";
     
     [simulatorAlert show];
     }
+    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){
+        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
+    }
+
     // Showkit gets allocated on the first call to it
 #if !TESTING_DYNAMIC_VIEWS
 #if TESTING_DECODER_CALLBACK==0
@@ -53,6 +56,7 @@ static NSString *kUser2password = @"";
     [ShowKit setState:self.prevVideoUIView forKey:SHKPreviewDisplayViewKey];
 #endif
     [ShowKit setState:SHKVideoLocalPreviewEnabled forKey:SHKVideoLocalPreviewModeKey];
+    [ShowKit setState:SHKCoNavigationOff forKey:SHKCoNavigationModeKey];
 
     // Enable software encoder- must be done before logging in
     [ShowKit setState:SHKVideoDecodeDeviceAuto forKey:SHKVideoDecodeDeviceKey];
@@ -284,7 +288,7 @@ static NSString *kUser2password = @"";
     v = (NSString*)s.Value;
     
     
-    if ([v isEqualToString:SHKConnectionStatusCallTerminated]){
+    if ([v isEqualToString:SHKConnectionStatusCallTerminated] || [v isEqualToString:SHKConnectionStatusCallFailed]){
         [self.makeCallOutlet setTitle:@"Call" forState:UIControlStateNormal];
         
         [ShowKit setState:SHKVideoInputDeviceFrontCamera
@@ -293,12 +297,33 @@ static NSString *kUser2password = @"";
         [ShowKit setState:SHKGestureCaptureModeOff
                    forKey:SHKGestureCaptureModeKey];
         
+        
+        [self.shareOutlet setTitle: @"Share" forState: UIControlStateNormal];
+        [self.runTestOutlet setTitle: @"Test" forState: UIControlStateNormal];
+        
+        UIAlertView *callIncoming = [[UIAlertView alloc] initWithTitle:@"Call Ended"
+                                                               message:@"Press ok to continue"
+                                                              delegate:self
+                                                     cancelButtonTitle:@"Ok"
+                                                     otherButtonTitles:nil, nil];
+        
+        
+        [callIncoming setTag:1];
+        [callIncoming show];
+        
+        
     } else if ([v isEqualToString:SHKConnectionStatusLoggedIn]) {
         [self.loginOutlet setTitle:@"Logout" forState:UIControlStateNormal];
 
 #if (TEST_VIDEO_CAPTURE)
         [SHKEncoder shkSetDelegate:(id<SHKVideoCaptureDelegate>)self];
+        [SHKEncoder setAutoSizingOff:true];
+        bool ok = [SHKEncoder setCaptureSize:640 height:352 fps:24];
 #endif
+        
+    } else if ([v isEqualToString:SHKConnectionStatusLoginFailed]) {
+        [self.shareOutlet setTitle: @"Share" forState: UIControlStateNormal];
+        [self.runTestOutlet setTitle: @"Test" forState: UIControlStateNormal];
     } else if ([v isEqualToString:SHKConnectionStatusLoginFailed]) {
         [ShowKit hangupCall];
     } else if ([v isEqualToString:SHKConnectionStatusCallIncoming]) {
@@ -317,13 +342,15 @@ static NSString *kUser2password = @"";
         }
         else
         {
+            [[UIApplication sharedApplication] cancelAllLocalNotifications];
             UILocalNotification *localNotif = [[UILocalNotification alloc] init];
-            localNotif.fireDate             = nil;
+            localNotif.fireDate             = [NSDate dateWithTimeIntervalSinceNow:1];
             localNotif.hasAction            = YES;
+            localNotif.timeZone             = [NSTimeZone defaultTimeZone];
             localNotif.alertBody            = [NSString stringWithFormat:@"Incoming Call."];
             localNotif.alertAction          = NSLocalizedString(@"Accept Call", nil);
             localNotif.soundName            = UILocalNotificationDefaultSoundName;
-            localNotif.applicationIconBadgeNumber = 1;
+            localNotif.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber]+1;
             
             [[UIApplication sharedApplication]presentLocalNotificationNow:localNotif];
         }
@@ -339,10 +366,15 @@ static NSString *kUser2password = @"";
         
         //set the main preview view
         [ShowKit setState:self.prevVideoUIView forKey:SHKPreviewDisplayViewKey];
+
+/// random tests we could run
+//          [ShowKit setState: SHKVideoInputDeviceBackCamera forKey: SHKVideoInputDeviceKey];
+//          [ShowKit setState:SHKTorchModeOn forKey:SHKTorchModeKey];
+//          [ShowKit setState:SHKVideoLocalPreviewEnabled forKey:SHKVideoLocalPreviewModeKey];
         
-        //set the main preview view
-       // [ShowKit setState:SHKVideoLocalPreviewEnabled forKey:SHKVideoLocalPreviewModeKey];
+        //[self.shareOutlet setTitle: @"Share" forState: UIControlStateNormal];
 #endif
+        [self.runTestOutlet setTitle: @"DrawOff" forState: UIControlStateNormal];
 #if TESTING_DECODER_CALLBACK
         [ShowKit setVideoBufferCallback:^(uint8_t*data, long width, long height, PixelFormat pixelFormat, BOOL isEncoding) {
             [self renderWithData:data width:width height:height pixelFormat:pixelFormat isEncoding:isEncoding];
@@ -400,7 +432,9 @@ static NSString *kUser2password = @"";
 #if TEST_VIDEO_CAPTURE
 //SHKVideoCaptureDelegate
 - (void)StartCapture {
-    self.encodeTimer = [NSTimer scheduledTimerWithTimeInterval:(1.f/30.f) target:self selector:@selector(encodeFrame) userInfo:nil repeats:YES];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.encodeTimer = [NSTimer scheduledTimerWithTimeInterval:(1.f/30.f) target:self selector:@selector(encodeFrame) userInfo:nil repeats:YES];
+    });
 }
 - (void)StopCapture {
     [self.encodeTimer invalidate];
@@ -433,7 +467,9 @@ static NSString *kUser2password = @"";
         }
     }
     
-    [SHKEncoder shkEncodeFrame:pBuf width:m_width height:m_height length:len colorspace:kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange mediatime:m_count];
+    //kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange
+    //kCVPixelFormatType_420YpCbCr8Planar
+    [SHKEncoder shkEncodeFrame:pBuf width:m_width height:m_height length:len colorspace:kCVPixelFormatType_420YpCbCr8Planar mediatime:m_count];
     
     delete pBuf;
 }
